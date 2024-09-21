@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        The Title tag Should be informative for SEO & should match the H1 tag of the page 
+        should also be limited to about 50-60 characters as not get truncated in the SERPs
+        ==> Use Article tag
+        ==> Use Alt Img attribute
+    -->
+    <title lang="" title="Page Title" id="Title_Home"></title>
+    <link rel="stylesheet" href="./CSS/NavBar .css">
+    <link rel="stylesheet" href="./CSS/Footer.css">
+    <link rel="stylesheet" href="./CSS/Home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                    result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+        </defs>
+    </svg>
+    <nav id="Arabic_NavBar">
+        
+    </nav>
+    <nav id="English_NavBar"></nav>
+    <h2 id="Overview_H2"></h2>
+    <section id="Overview_Section"></section>    
+    <section id = "Video_Section">
+        <!-- <div class="sp-embed-player" data-id="cZQq3qVSqlo">
+            <script src="https://go.screenpal.com/player/appearance/cZQq3qVSqlo"></script><iframe width="90%"
+                height="90%" style="border:0;" scrolling="no"
+                src="https://go.screenpal.com/player/cZQq3qVSqlo?width=100%&height=100%&ff=1&title=0&a=1&share=1&download=1&cl=1"
+                allowfullscreen="true"></iframe>
+        </div> -->
+        <video controls autoplay muted>
+            <source src="./Vedios/22 november 2023 - Trim _ Main - Trim_Short .mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </section>
+    <section id="Objectives_Section"></section>
+    <h2 id = "Current_President_H2"></h2>
+    <div id="Current_President_Image_Container">
+        <img id = "Current_President_Image" src="./Images/Current Persident Picture Upscaled .png" alt="Current Persident Picture">
+    </div>
+    <h1 id="Home_H1"></h1>
+    <p id="First_P"></p>
+    <section id="Current_President_Section">
+    </section>
+    <video id = "Director_Speech_Video" controls autoplay muted>
+        <source src="./Vedios/22 november 2023 - Trim _ Main - Trim_ Speech_.mp4"
+            type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- <div class="sp-embed-player" data-id="cZQq3qVSqlb">
+        <script src="https://go.screenpal.com/player/appearance/cZQq3qVSqlb"></script><iframe width="90%" height="90%"
+            style="border:0;" scrolling="no"
+            src="https://go.screenpal.com/player/cZQq3qVSqlb?width=100%&height=100%&ff=1&title=0&a=1&share=1&download=1&cl=1"
+            allowfullscreen="true"></iframe>
+    </div> -->
+    
+    <p id="Second_P"></p>
+    <div id="Footer_Section">
+        <div class="main"></div>
+        <div class="footer"></div>
+    </div>
+
+<script  src="./JavaScript/NavBar_Footer_Language Changer.js"></script>
+<script  src="./JavaScript/Home.js"></script>
+<script  src="./JavaScript/Footer_Bubbles.js"></script>
+<script  src="./JavaScript/Arabic_Lang_Button.js"></script>
+<script  src="./JavaScript/English_Lang_Button.js"></script>
+<script src="./JavaScript/Storage_Data_Encryption.js"></script>
+<!-- <script src="./JavaScript/Get Location.js"></script> -->
+ <script>
+     var Hel = "ZZZZZZZZZZZZZZZZZZZZZZZ";
+</script>
+<script>
+    alert(`The Password Is :: \t\n\n ${password}`)
+    // console.log(Bubbles)
+    // localStorage.clear()
+    // localStorage.setItem("Permenant_Language", "HALAAAA");
+    if (!(location.href.includes("/Home") || location.href.includes("/home"))){
+        // alert("The Page URL Before Modifications  " + location.href)
+        location.href += "/Home";
+        // alert("The Page URL After Modifications  " + location.href)
+    }
+    else{
+        // alert("The URL Is On Home Page")
+    }
+    console.log("Lang From Home :: " + localStorage.getItem("Permenant_Language"));
+    if(
+    (localStorage.getItem("Permenant_Language") != "English" && localStorage.getItem("Permenant_Language") != "عربي"))
+    {
+        const xhr = new XMLHttpRequest();
+        xhr.open(
+          "GET",
+          "https://api.geoapify.com/v1/ipinfo?&apiKey=b1eafd427c864fd8ad4009a48be4ec1f"
+        );
+        xhr.onload = function () {
+        //   localStorage.setItem("Permenant_Language", " ");
+          JSON.parse(xhr.responseText);
+          console.log(JSON.parse(xhr.responseText));
+          if (
+            JSON.parse(xhr.responseText).country.languages[0].name_native ===
+            "العربية"
+          ) {
+            localStorage.setItem("Permenant_Language", "عربي");
+            console.log("Lang From Home After Conversion :: " + localStorage.getItem("Permenant_Language"));
+            // sessionStorage.setItem("Permenant_Language", "عربي");
+            // sessionStorage.getItem()
+            // Permenant_Language = "عربي";
+            NavIsAR();
+          } else {
+            localStorage.setItem("Permenant_Language", "English");
+            alert("Lang From Home After Conversion :: " + localStorage.getItem("Permenant_Language"));
+            // sessionStorage.setItem("Permenant_Language", "English");
+            // Permenant_Language = "English";
+            NavIsEn();
+          }
+        };
+    
+        xhr.send();
+    }
+</script>
+
+</body>
+</html>

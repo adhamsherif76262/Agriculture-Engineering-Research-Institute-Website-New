@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        The Title tag Should be informative for SEO & should match the H1 tag of the page 
+        should also be limited to about 50-60 characters as not get truncated in the SERPs
+        ==> Use Article tag
+        ==> Use Alt Img attribute
+    -->
+    <title lang="" id="Rice_Mechanization_Center_Page_Title"></title>
+    <link rel="stylesheet" href="../../CSS/NavBar .css">
+    <link rel="stylesheet" href="../../CSS/Footer.css">
+    <link rel="stylesheet" href="../../CSS/Rice_Mechnization_Center.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                    result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+        </defs>
+    </svg>
+    <nav id="Arabic_NavBar">
+        <!-- <button type="button" id="Language_Switch" title="Language Button"></button> -->
+
+    </nav>
+    <nav id="English_NavBar"></nav>
+    <!-- <h1 id="Rice_Mechanization_Center_H1"></h1> -->
+    <marquee id="Inner_Header_Marquee" behavior="alternate" scrollamount="12">
+        
+    </marquee>
+    <section id="Video_Section">
+        <video controls autoplay muted>
+            <source src="../../Vedios/22 november 2023 - Trim_Rice_Mechanization.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <!-- <div class="sp-embed-player" data-id="cZQq3YVSqlt" style="margin-left:500px;">
+            <script src="https://go.screenpal.com/player/appearance/cZQq3YVSqlt"></script><iframe width="100%"
+                height="100%" style="border:0;" scrolling="no"
+                src="https://go.screenpal.com/player/cZQq3YVSqlt?width=100%&height=100%&ff=1&title=0&a=1&share=1&download=1&cl=1"
+                allowfullscreen="true"></iframe>
+        </div> -->
+    </section>
+    <section id="Main_RMC_Section_Ar"></section>
+    <section id="Main_RMC_Section_En"></section>
+    <section id="Footer_Section">
+        <div class="main"></div>
+        <div class="footer"></div>
+    </section>
+
+    <script src="../../JavaScript/NavBar_Footer_Language Changer.js"></script>
+    <script src="../../JavaScript/Departements/Rice_Mechanization_Center.js"></script>
+    <script src="../../JavaScript/Arabic_Lang_Button.js"></script>
+    <script src="../../JavaScript/English_Lang_Button.js"></script>
+    <script src="../../JavaScript/Storage_Data_Encryption.js"></script>
+
+</body>
+
+</html>

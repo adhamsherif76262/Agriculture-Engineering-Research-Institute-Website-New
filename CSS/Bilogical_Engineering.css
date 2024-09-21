@@ -1,0 +1,431 @@
+@font-face {
+    font-family: PT-Bold-Heading;
+    src: url(../Fonts/PT\ Bold\ Heading.ttf);
+}
+
+@font-face {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    src: url(../Fonts/ArbFONTS-OMNES-ARABIC-BOLD.ttf);
+}
+
+@font-face {
+    font-family: Omnes-Arabic-HairLine;
+    src: url(../Fonts/ArbFONTS-OMNES-ARABIC-REGULAR.ttf);
+}
+
+@font-face {
+    font-family: Arial-Black;
+    src: url(../Fonts/Arial\ Black.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#Biological_Engineering_Span_1,
+#Biological_Engineering_Span_2,
+#Biological_Engineering_Span_3,
+#Biological_Engineering_Span_4 {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    font-size: 40px !important;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#Inner_Header_Marquee:hover {
+    transition: 1s;
+    background-color: rgb(0, 0, 119);
+    color: white;
+    cursor: pointer;
+    border: double 15px white;
+    /* border-radius: 50%; */
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/** Objectives Section **/
+#BE_Objectives_Section {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    /* max-width: 420px; */
+    padding: 32px;
+    margin: 60px auto;
+    border: 10px solid #eee;
+    box-shadow: 0px 0px 30px 10px black;
+    color: black !important;
+    background-color: rgb(243, 235, 223);
+}
+
+.alternating-colors {
+    padding-left: 50px;
+}
+
+.OB_OL_AR {
+    padding-right: 50px;
+    list-style-type: arabic-indic;
+}
+
+.alternating-colors li {
+    padding-left: 16px;
+    margin-top: 24px;
+    position: relative;
+    font-size: 25px;
+}
+
+.OB_OL_AR li {
+    padding-right: 15px;
+    margin-top: 24px;
+    position: relative;
+    font-size: 25px;
+}
+
+.alternating-colors li:before {
+    content: '';
+    display: block;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    position: absolute;
+    top: -5px;
+    left: -50px;
+}
+
+.OB_OL_AR li:before {
+    content: '';
+    display: block;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    position: absolute;
+    top: -5px;
+    right: -50px;
+}
+
+li:nth-child(even):before {
+    border-color: #0bad02;
+}
+
+li:nth-child(odd):before {
+    border-color: #2378d5;
+}
+
+/** Research Fields Section **/
+#BE_Achieviements_Section_H2,
+#BE_Research_Fields_Section_H2,
+#BE_Objectives_Section_H2 {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    margin-top: 50px;
+}
+
+#BE_Research_Fields_Section_UL {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    list-style-position: inside;
+    width: 90%;
+    max-width: 100%;
+    background: white;
+    box-shadow: 0rem 0rem 2rem 2rem rgb(0 0 0 / 0.15);
+    padding: 10px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 0.1rem;
+}
+
+#BE_Research_Fields_Section_LI {
+    font-size: 30px;
+    padding: 50px;
+    /* padding: 0 0 0 1rem; */
+}
+
+#BE_Research_Fields_Section_LI:not(:last-child) {
+    /* border-bottom: 10px solid lightblue; */
+    border-bottom: 15px solid rgb(243, 235, 223);
+}
+
+#BE_Research_Fields_Section_LI:first-child {
+    margin-top: 1rem;
+}
+
+#BE_Research_Fields_Section_LI:last-child {
+    margin-bottom: 1rem;
+}
+
+/* ::marker {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='25' viewBox='0 0 50 50'%3E%3Cpath d='M46.4 16.2c-2.3-2.3-5.4-3.5-8.4-4.5-.5-.2-1.1-.3-1.6-.5-1.6-1.6-3.7-2.8-6.2-3.2-1-.2-1.9.1-2.5.6-.9-.3-1.8-.6-2.7-.8-3.2-1-6.4-1.8-9.5-.1-1 .5-1.9 1.2-2.7 2-6.4 1.4-11.7 5-12.4 12.7C0 27 1.9 31.5 4.9 34.9c.1.6.2 1.1.4 1.7 1 3.2 3.3 5.7 6.7 6.5 2.7.6 5.4-.2 7.9-1.2 3.3.4 6.7.3 9.9 0 6.5-.7 13.3-2.8 17.1-8.5 3.6-5.2 4-12.6-.5-17.2zm-17.3.9c2.1.4 4 1.7 4.7 3.8 0 .5-.1 1.1-.2 1.6-.3 1.4-.8 2.6-1.6 3.7-.7.2-1.5.1-2.3-.4-.8-.4-1.6-1-2.2-1.6-.4-.4-1.2-1.7-1.6-1.9 3.4 1.3 5.1-3 3.2-5.2zm-11.6 9.7c.2-1.9 1.1-3.9 2.3-5.5-.4 2.1.3 4.2 1.7 6 1.3 1.7 3.1 3.2 5 4.2-.2.1-.4.2-.6.4-.1 0-.1.1-.2.1-3.9.2-8.7-.8-8.2-5.2zm-6.4 3.1c.1.3.1.7.2 1 .2.6.4 1.2.7 1.8-.4-.2-.7-.5-1-.7.1-.8.1-1.4.1-2.1zm31.2-1.3c-.9 1.7-2.1 3.1-3.7 4.1 2-2.1 3.4-4.7 4-7.6.2-.7.3-1.4.3-2.1.6 1.5.5 3.3-.6 5.6z'/%3E%3C/svg%3E") ' ';
+    } */
+
+#BE_Research_Fields_Section_LI:nth-child(1)::marker,
+#BE_Research_Fields_Section_LI:nth-child(4)::marker {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='25' viewBox='0 0 50 50'%3E%3Cpath d='M46.4 16.2c-2.3-2.3-5.4-3.5-8.4-4.5-.5-.2-1.1-.3-1.6-.5-1.6-1.6-3.7-2.8-6.2-3.2-1-.2-1.9.1-2.5.6-.9-.3-1.8-.6-2.7-.8-3.2-1-6.4-1.8-9.5-.1-1 .5-1.9 1.2-2.7 2-6.4 1.4-11.7 5-12.4 12.7C0 27 1.9 31.5 4.9 34.9c.1.6.2 1.1.4 1.7 1 3.2 3.3 5.7 6.7 6.5 2.7.6 5.4-.2 7.9-1.2 3.3.4 6.7.3 9.9 0 6.5-.7 13.3-2.8 17.1-8.5 3.6-5.2 4-12.6-.5-17.2zm-17.3.9c2.1.4 4 1.7 4.7 3.8 0 .5-.1 1.1-.2 1.6-.3 1.4-.8 2.6-1.6 3.7-.7.2-1.5.1-2.3-.4-.8-.4-1.6-1-2.2-1.6-.4-.4-1.2-1.7-1.6-1.9 3.4 1.3 5.1-3 3.2-5.2zm-11.6 9.7c.2-1.9 1.1-3.9 2.3-5.5-.4 2.1.3 4.2 1.7 6 1.3 1.7 3.1 3.2 5 4.2-.2.1-.4.2-.6.4-.1 0-.1.1-.2.1-3.9.2-8.7-.8-8.2-5.2zm-6.4 3.1c.1.3.1.7.2 1 .2.6.4 1.2.7 1.8-.4-.2-.7-.5-1-.7.1-.8.1-1.4.1-2.1zm31.2-1.3c-.9 1.7-2.1 3.1-3.7 4.1 2-2.1 3.4-4.7 4-7.6.2-.7.3-1.4.3-2.1.6 1.5.5 3.3-.6 5.6z'/%3E%3C/svg%3E") ' ';
+}
+
+#BE_Research_Fields_Section_LI:nth-child(3n)::marker {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='25' viewBox='0 0 50 50'%3E%3Cpath d='M46.5 12.5c-.4-1.1-1.3-1.8-2.2-2-4.2-4-11.6-4.3-17.1-4.1-6.9.3-13.9 2.1-19.4 6.5C2 17.5-2.4 25.7 2.5 32.6c2.2 3.2 5.5 4.9 9 5.5 3.3 1.7 6.7 3.3 10.2 4.4 7.8 2.3 17 1.6 23.2-4.3 7.3-7 4.8-17.3 1.6-25.7zm-20.2 2.7c.6 0 1.3 0 1.8.2 1.1.4 1.7 1.3 2 2.3-1-1.2-2.4-2.1-3.8-2.5zm-1.4 6.6c.9.9 1.3 2.2-.2 2.3-2 .2-1.1-1.9.2-2.3zm-11.8 9.8c-.6-.3-2.9-1.1-3.2-1.8-.2-.5 1.4-3.1 2.1-4.2.3.5.7 1 1.2 1.4 0 .3.1.6.2.8.5 1.9 1.5 3.1 2.9 4h-.2c-.8.1-1.6.1-2.5-.1-.2 0-.3 0-.5-.1zM24 36.4c1.6-.7 3-1.5 4.3-2.5.8.2 1.7.3 2.5.5 2.5.4 5.2.9 7.7.6-.9.6-2 1.1-3 1.4-3.9 1.3-7.7 1-11.5 0z'/%3E%3C/svg%3E") ' ';
+}
+
+#BE_Research_Fields_Section_LI:nth-child(3n - 1)::marker {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='25' viewBox='0 0 50 50'%3E%3Cpath d='M48.3 23.7c-1-9.9-9.9-15.6-18.8-17.8-8.2-2.1-18.8-2.6-24.6 4.8C.6 16.2 1 23.6 4.3 29.3c-.5 1-.8 2-1 3-.6 4 2 7.6 5.1 10 5.9 4.4 14 4.2 19.6-.4 1.5 0 2.9-.2 4.4-.5 1.8 0 3.5 0 5.3-.1 2.3-.1 3.5-1.9 3.5-3.7 4.5-3.3 7.7-8.2 7.1-13.9zM9.1 17.8c1.1-4.1 4.9-5.8 8.8-6.1.9-.1 1.9-.1 2.9-.1-3.2 1.6-6.3 4.6-8 7.4-.1.1-.1.2-.2.3-1.1.9-2.1 1.9-3 2.9-.2.2-.4.4-.5.6-.4-1.7-.5-3.3 0-5z'/%3E%3C/svg%3E") ' ';
+}
+
+/** Achieviements Section **/
+#BE_Achieviements_Section_H2{
+    margin-bottom: 50px;
+}
+:root {
+    --left-color: black;
+    --right-color: black;
+    --left-color-stop: 25%;
+    --item-border-thickness: 15px;
+    --item-border-color: #f7941d;
+    --item-border-radius: 40px;
+    --item-height: 15em;
+    --icon-percent-width: 100%;
+}
+
+.XXXXX {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    width: 95%;
+    margin: auto;
+    color: white;
+}
+
+#BE_Achieviements_Section_En .XXXXX__list-item {
+    background: linear-gradient(to right,
+            var(--left-color) 0%,
+            var(--left-color) var(--left-color-stop),
+            var(--right-color) var(--left-color-stop),
+            var(--right-color) 100%);
+    border: var(--item-border-thickness) solid var(--item-border-color);
+    border-radius: var(--item-border-radius);
+    height: var(--item-height);
+    width: 100%;
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+
+#BE_Achieviements_Section_Ar .XXXXX__list-item {
+    background: linear-gradient(to left,
+            var(--left-color) 0%,
+            var(--left-color) var(--left-color-stop),
+            var(--right-color) var(--left-color-stop),
+            var(--right-color) 100%);
+    border: var(--item-border-thickness) solid var(--item-border-color);
+    border-radius: var(--item-border-radius);
+    height: var(--item-height);
+    width: 100%;
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+
+#BE_Achieviements_Section_En .XXXXX__list-item,
+#BE_Achieviements_Section_En .XXXXX__label,
+#BE_Achieviements_Section_En .XXXXX__svg-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#BE_Achieviements_Section_Ar .XXXXX__list-item,
+#BE_Achieviements_Section_Ar .XXXXX__label,
+#BE_Achieviements_Section_Ar .XXXXX__svg-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.XXXXX__label,
+.XXXXX__svg-container {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.XXXXX__list-icon {
+    width: var(--left-color-stop);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.XXXXX__svg-container {
+    width: var(--icon-percent-width);
+    color: #ffffff;
+}
+
+.XXXXX__svg-container svg {
+    /* max-height: 100%;
+    max-width: 100%; */
+    width: 100%;
+    height: 100%;
+}
+
+.XXXXX__label {
+    flex-grow: 1;
+    font-size: 25px;
+    padding: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+@media screen and (max-width : 1250px) {
+    :root {
+        --item-height: 20em;
+    }
+}
+
+@media screen and (max-width : 900px) {
+    :root {
+        --item-height: 30em;
+    }
+}
+
+@media screen and (max-width : 725px) {
+    :root {
+        --item-height: 40em;
+    }
+
+    #BE_Achieviements_Section_Ar img {
+        transform: scale(80%);
+        margin-right: 50px;
+    }
+
+    #BE_Achieviements_Section_En img {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width : 500px) {
+
+    #Biological_Engineering_Span_1,
+    #Biological_Engineering_Span_2 {
+        font-size: 30px !important;
+    }
+
+    .alternating-colors {
+        padding-left: 10px;
+    }
+
+    .OB_OL_AR {
+        padding-right: 10px;
+    }
+
+    #BE_Achieviements_Section_En .XXXXX__list-item,
+    #BE_Achieviements_Section_En .XXXXX__label,
+    #BE_Achieviements_Section_En .XXXXX__svg-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #BE_Achieviements_Section_Ar .XXXXX__list-item,
+    #BE_Achieviements_Section_Ar .XXXXX__label,
+    #BE_Achieviements_Section_Ar .XXXXX__svg-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #BE_Achieviements_Section_Ar img {
+        transform: scale(100%);
+        margin-bottom: -150px;
+        margin-right: -350px;
+    }
+
+    #BE_Achieviements_Section_En img {
+        margin-bottom: -150px;
+        margin-right: -250px;
+    }
+
+    :root {
+        --item-height: 50em;
+        /* --left-color-stop: 30% !important; */
+    }
+}
+
+@media screen and (max-width : 465px) {
+
+    #Biological_Engineering_Span_1::after,
+    #Biological_Engineering_Span_2::after {
+        content: "\a";
+        white-space: pre;
+    }
+
+    #BE_Research_Fields_Section_LI {
+        font-size: 25px;
+        padding: 20px;
+    }
+
+    #BE_Research_Fields_Section_LI:nth-child(1)::marker,
+    #BE_Research_Fields_Section_LI:nth-child(4)::marker {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='20' viewBox='0 0 50 50'%3E%3Cpath d='M46.4 16.2c-2.3-2.3-5.4-3.5-8.4-4.5-.5-.2-1.1-.3-1.6-.5-1.6-1.6-3.7-2.8-6.2-3.2-1-.2-1.9.1-2.5.6-.9-.3-1.8-.6-2.7-.8-3.2-1-6.4-1.8-9.5-.1-1 .5-1.9 1.2-2.7 2-6.4 1.4-11.7 5-12.4 12.7C0 27 1.9 31.5 4.9 34.9c.1.6.2 1.1.4 1.7 1 3.2 3.3 5.7 6.7 6.5 2.7.6 5.4-.2 7.9-1.2 3.3.4 6.7.3 9.9 0 6.5-.7 13.3-2.8 17.1-8.5 3.6-5.2 4-12.6-.5-17.2zm-17.3.9c2.1.4 4 1.7 4.7 3.8 0 .5-.1 1.1-.2 1.6-.3 1.4-.8 2.6-1.6 3.7-.7.2-1.5.1-2.3-.4-.8-.4-1.6-1-2.2-1.6-.4-.4-1.2-1.7-1.6-1.9 3.4 1.3 5.1-3 3.2-5.2zm-11.6 9.7c.2-1.9 1.1-3.9 2.3-5.5-.4 2.1.3 4.2 1.7 6 1.3 1.7 3.1 3.2 5 4.2-.2.1-.4.2-.6.4-.1 0-.1.1-.2.1-3.9.2-8.7-.8-8.2-5.2zm-6.4 3.1c.1.3.1.7.2 1 .2.6.4 1.2.7 1.8-.4-.2-.7-.5-1-.7.1-.8.1-1.4.1-2.1zm31.2-1.3c-.9 1.7-2.1 3.1-3.7 4.1 2-2.1 3.4-4.7 4-7.6.2-.7.3-1.4.3-2.1.6 1.5.5 3.3-.6 5.6z'/%3E%3C/svg%3E") ' ';
+    }
+
+    #BE_Research_Fields_Section_LI:nth-child(3n)::marker {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='20' viewBox='0 0 50 50'%3E%3Cpath d='M46.5 12.5c-.4-1.1-1.3-1.8-2.2-2-4.2-4-11.6-4.3-17.1-4.1-6.9.3-13.9 2.1-19.4 6.5C2 17.5-2.4 25.7 2.5 32.6c2.2 3.2 5.5 4.9 9 5.5 3.3 1.7 6.7 3.3 10.2 4.4 7.8 2.3 17 1.6 23.2-4.3 7.3-7 4.8-17.3 1.6-25.7zm-20.2 2.7c.6 0 1.3 0 1.8.2 1.1.4 1.7 1.3 2 2.3-1-1.2-2.4-2.1-3.8-2.5zm-1.4 6.6c.9.9 1.3 2.2-.2 2.3-2 .2-1.1-1.9.2-2.3zm-11.8 9.8c-.6-.3-2.9-1.1-3.2-1.8-.2-.5 1.4-3.1 2.1-4.2.3.5.7 1 1.2 1.4 0 .3.1.6.2.8.5 1.9 1.5 3.1 2.9 4h-.2c-.8.1-1.6.1-2.5-.1-.2 0-.3 0-.5-.1zM24 36.4c1.6-.7 3-1.5 4.3-2.5.8.2 1.7.3 2.5.5 2.5.4 5.2.9 7.7.6-.9.6-2 1.1-3 1.4-3.9 1.3-7.7 1-11.5 0z'/%3E%3C/svg%3E") ' ';
+    }
+
+    #BE_Research_Fields_Section_LI:nth-child(3n - 1)::marker {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='20' viewBox='0 0 50 50'%3E%3Cpath d='M48.3 23.7c-1-9.9-9.9-15.6-18.8-17.8-8.2-2.1-18.8-2.6-24.6 4.8C.6 16.2 1 23.6 4.3 29.3c-.5 1-.8 2-1 3-.6 4 2 7.6 5.1 10 5.9 4.4 14 4.2 19.6-.4 1.5 0 2.9-.2 4.4-.5 1.8 0 3.5 0 5.3-.1 2.3-.1 3.5-1.9 3.5-3.7 4.5-3.3 7.7-8.2 7.1-13.9zM9.1 17.8c1.1-4.1 4.9-5.8 8.8-6.1.9-.1 1.9-.1 2.9-.1-3.2 1.6-6.3 4.6-8 7.4-.1.1-.1.2-.2.3-1.1.9-2.1 1.9-3 2.9-.2.2-.4.4-.5.6-.4-1.7-.5-3.3 0-5z'/%3E%3C/svg%3E") ' ';
+    }
+
+    #BE_Achieviements_Section_Ar img {
+        transform: scale(100%);
+        margin-bottom: -150px;
+        margin-right: -250px;
+    }
+
+    .XXXXX__label {
+        margin-top: 150px;
+    }
+
+    :root {
+        --item-height: 60em;
+    }
+}
+
+@media screen and (max-width : 375px) {
+
+    #Biological_Engineering_Span_1,
+    #Biological_Engineering_Span_2 {
+        font-size: 30px !important;
+    }
+
+    .alternating-colors li {
+        padding-left: 0px;
+        margin-top: 25px;
+        font-size: 22px;
+    }
+
+    #BE_Achieviements_Section_Ar img,
+    #BE_Achieviements_Section_En img {
+        margin-bottom: -150px;
+        margin-right: -150px;
+    }
+
+    #BE_Achieviements_Section_Ar img {
+        transform: scale(100%);
+        margin-bottom: -150px;
+        margin-right: -250px;
+    }
+}
+
+@media screen and (max-width : 325px) {
+
+    #Biological_Engineering_Span_1,
+    #Biological_Engineering_Span_2 {
+        font-size: 30px !important;
+    }
+
+    :root {
+        --item-height: 70em;
+    }
+
+    #BE_Achieviements_Section_Ar img {
+        transform: scale(100%);
+        margin-bottom: -150px;
+        margin-right: -200px;
+    }
+}

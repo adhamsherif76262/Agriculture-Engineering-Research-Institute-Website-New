@@ -1,0 +1,498 @@
+@font-face {
+    font-family: PT-Bold-Heading;
+    src: url(../Fonts/PT\ Bold\ Heading.ttf);
+}
+
+@font-face {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    src: url(../Fonts/ArbFONTS-OMNES-ARABIC-BOLD.ttf);
+}
+
+@font-face {
+    font-family: Omnes-Arabic-HairLine;
+    src: url(../Fonts/ArbFONTS-OMNES-ARABIC-REGULAR.ttf);
+}
+
+@font-face {
+    font-family: Arial-Black;
+    src: url(../Fonts/Arial\ Black.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+video {
+    width: 85%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-top: 100px;
+}
+
+#Director_Speech_Video {
+    width: 85%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-top: 0px;
+    margin-bottom: 50px !important;
+}
+
+.wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-family: Omnes-Arabic-HairLine-Bold;
+    font-size: 25px;
+}
+
+.wrapper h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li+li {
+    margin-top: 1rem;
+}
+
+.Objectives_LI:nth-child(4) {
+    margin-left : 175px !important;
+}
+
+.Objectives_LI {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* background: rgb(243, 235, 223); */
+    /* background: aliceblue; */
+    background: #d5d5d5;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: calc(100% - 2rem);
+    box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
+}
+
+
+.Objectives_LI::before {
+    /* content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512' width='100' title='fish'%3E%3Cpath d='M327.1 96c-89.97 0-168.54 54.77-212.27 101.63L27.5 131.58c-12.13-9.18-30.24.6-27.14 14.66L24.54 256 .35 365.77c-3.1 14.06 15.01 23.83 27.14 14.66l87.33-66.05C158.55 361.23 237.13 416 327.1 416 464.56 416 576 288 576 256S464.56 96 327.1 96zm87.43 184c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24 13.26 0 24 10.74 24 24 0 13.25-10.75 24-24 24z' /%3E%3C/svg%3E"); */
+    content: url("../Images/Objectives-ezgif.com-resize.gif");
+}
+
+.Objectives_LI:nth-child(even) {
+    flex-direction: row-reverse;
+    /* background: honeydew; */
+    /* background: rgb(243, 235, 223); */
+    background: #d5d5d5;
+    margin-right: -2rem;
+}
+
+.Objectives_LI:nth-child(even)::before {
+    transform: rotateY(180deg);
+}
+
+#Current_President_Image_Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Current_President_Image {
+    max-width: 600px;
+    height: auto;
+    margin: auto;
+}
+
+#Home_H1,
+#Current_President_H2,
+#Overview_H2 {
+    font-family: Omnes-Arabic-HairLine-Bold !important;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#First_P,
+#Second_P,
+#Overview_Section {
+    background-color: rgb(243, 235, 223);
+    padding: 50px;
+    border-radius: 50px;
+    font-size: 30px;
+    font-family: Omnes-Arabic-HairLine-Bold !important;
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Current_President_Section_Ar {
+    direction: rtl;
+}
+
+#Current_President_Section_En {
+    direction: ltr;
+}
+
+#Current_President_Section_En,
+#Current_President_Section_Ar {
+    width: 100%;
+    margin: auto;
+}
+
+.tilesWrap {
+    padding: 0;
+    margin: 50px auto;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+#Current_President_Section_Ar .tilesWrap li {
+    display: inline-block;
+    width: 43%;
+    min-width: 200px;
+    /* max-width: 230px; */
+    padding: 100px 75px 50px;
+    position: relative;
+    vertical-align: top;
+    margin: 50px;
+    min-height: 50vh;
+    height: 75vh;
+    background: #262a2b;
+    border: 1px solid #252727;
+    text-align: center;
+}
+
+#Current_President_Section_En .tilesWrap li {
+    display: inline-block;
+    width: 43%;
+    min-width: 200px;
+    /* max-width: 230px; */
+    padding: 100px 75px 50px;
+    position: relative;
+    vertical-align: top;
+    margin: 50px;
+    min-height: 50vh;
+    height: 105vh;
+    background: #262a2b;
+    border: 1px solid #252727;
+    text-align: center;
+}
+
+.tilesWrap li h2 {
+    font-size: 114px !important;
+    margin: 0;
+    position: absolute;
+    opacity: 0.15;
+    top: 50px;
+    right: 10px;
+    /* z-index: 1; */
+    transition: all 0.3s ease-in-out;
+    /* color: red; */
+    color: rgb(243, 235, 223)
+}
+
+#Current_President_Section_Ar .tilesWrap li h3 {
+    font-size: 25px;
+    /* color: #b7b7b7; */
+    color: white;
+    z-index: 100;
+    margin-bottom: 25px;
+    font-family: Omnes-Arabic-HairLine-Bold !important;
+    /* margin: 50px; */
+}
+
+.tilesWrap li h3 {
+    font-size: 30px;
+    /* color: #b7b7b7; */
+    color: white;
+    z-index: 100;
+    margin-bottom: 25px;
+    font-family: Omnes-Arabic-HairLine-Bold !important;
+    /* margin-top: 50px; */
+}
+
+.tilesWrap li p {
+    font-size: 25px;
+    line-height: 50px;
+    /* color: #b7b7b7; */
+    color: white;
+    z-index: 100;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    font-family: Omnes-Arabic-HairLine-Bold !important;
+}
+
+.tilesWrap li button {
+    font-family: Omnes-Arabic-HairLine-Bold !important;
+    background: transparent;
+    border: 8px double white;
+    padding: 20px 20px;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-50px);
+    opacity: 0;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 25px;
+}
+
+.tilesWrap li button:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 120%;
+    /* background: #b7b7b7; */
+    background: rgb(243, 235, 223);
+    top: 0;
+    opacity: 0;
+    left: -140px;
+    border-radius: 0 20px 20px 0;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.tilesWrap li:hover button {
+    transform: translateY(5px);
+    opacity: 1;
+}
+
+.tilesWrap li button:hover {
+    color: black;
+}
+
+.tilesWrap li button:hover:before {
+    left: 0;
+    opacity: 1;
+}
+
+.tilesWrap li:hover h2 {
+    top: 0px;
+    opacity: 1;
+}
+
+.tilesWrap li:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    background: #fff;
+    transform: skew(5deg, 5deg);
+}
+
+.tilesWrap li:after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.tilesWrap li:nth-child(1):before {
+    background: #C9FFBF;
+    background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF);
+    background: linear-gradient(to right, #FFAFBD, #C9FFBF);
+}
+
+.tilesWrap li:nth-child(2):before {
+    background: #f2709c;
+    background: -webkit-linear-gradient(to right, #ff9472, #f2709c);
+    background: linear-gradient(to right, #ff9472, #f2709c);
+}
+
+.tilesWrap li:nth-child(3):before {
+    background: #c21500;
+    background: -webkit-linear-gradient(to right, #ffc500, #c21500);
+    background: linear-gradient(to right, #ffc500, #c21500);
+}
+
+.tilesWrap li:nth-child(4):before {
+    background: #FC354C;
+    background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);
+    background: linear-gradient(to right, #0ABFBC, #FC354C);
+}
+
+.tilesWrap li:nth-child(5):before {
+    background: #00c3ff;
+    background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);
+    background: linear-gradient(to right, #ffff1c, #00c3ff);
+}
+
+.tilesWrap li:nth-child(6):before {
+    background: #8e2de2;
+    background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+}
+
+
+@media screen and (max-width : 1300px) {
+
+    #Current_President_Section_Ar,
+    #Current_President_Section_En {
+        overflow: hidden;
+    }
+
+    #Current_President_Section_Ar .tilesWrap li {
+        width: 40%;
+        height: 95vh;
+
+    }
+
+    #Current_President_Section_En .tilesWrap li {
+        width: 40%;
+        height: 140vh;
+    }
+}
+
+@media screen and (max-width : 1250px) {
+    #Current_President_Section_En .tilesWrap li {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width : 1200px) {
+    #Current_President_Section_Ar .tilesWrap li {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width : 850px) {
+    #Current_President_Section_En .tilesWrap li {
+        width: 85%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    #Current_President_Section_Ar .tilesWrap li {
+        width: 85%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width : 650px) {
+    #Current_President_Section_En .tilesWrap li {
+        width: 80%;
+        height: auto;
+    }
+
+    #Current_President_Image {
+        max-width: 450px;
+    }
+
+    #Current_President_Image_Container {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .Objectives_LI {
+        flex-direction: column;
+    }
+
+    .Objectives_LI:nth-child(even) {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    #Current_President_Section_Ar .tilesWrap li {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width : 550px) {
+    #Current_President_Section_En .tilesWrap li {
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    #Current_President_Section_En .tilesWrap li {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    #Current_President_Section_Ar .tilesWrap li {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    #Current_President_Image {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width : 450px) {
+    #Current_President_Section_En .tilesWrap li {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        width: 70%;
+    }
+
+    #Current_President_Section_Ar .tilesWrap li:before {
+        transform: skew(3deg, 3deg) !important;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    #Current_President_Section_En .tilesWrap li {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        width: 70%;
+    }
+
+    #Current_President_Section_Ar .tilesWrap li {
+        width: 70%;
+    }
+
+    .tilesWrap li:before {
+        transform: skew(3deg, 3deg) !important;
+    }
+
+    #Current_President_Image {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width : 325px) {
+    #Current_President_Section_Ar .tilesWrap li {
+        width: 40%;
+    }
+
+    #Current_President_Section_En .tilesWrap li {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        width: 60%;
+    }
+
+    .tilesWrap li:before {
+        transform: skew(2deg, 2deg) !important;
+    }
+
+    #Current_President_Image {
+        max-width: 250px;
+    }
+}

@@ -1,0 +1,227 @@
+@font-face {
+    font-family: PT-Bold-Heading;
+    src: url(../Fonts/PT\ Bold\ Heading.ttf);
+}
+
+@font-face {
+    font-family: Arial-Black;
+    src: url(../Fonts/Arial\ Black.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.2rem;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.Departements_Links_Ar {
+    /* color: rgb(0, 0, 120); */
+    color: black;
+    text-decoration: none;
+    /* color: white; */
+    font-size: 35px;
+}
+
+.Departements_Links_En {
+    /* color: rgb(0, 0, 120); */
+    color: black;
+    /* text-decoration: none; */
+    /* color: white; */
+    font-size: 25px;
+}
+
+li:hover {
+    transition: 0.5s;
+    transform: scale(120%);
+}
+
+#Institute_Sections_H1 {
+    font-size: 50px !important;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#OL_En {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    /* max-width   : 700px; */
+    position: relative;
+    list-style-type: none;
+    direction: ltr;
+    font-family: Arial-Black;
+}
+
+#OL_Ar {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    /* max-width   : 700px; */
+    position: relative;
+    list-style-type: none;
+    direction: rtl;
+    font-family: PT-Bold-Heading;
+}
+
+#OL_Ar::before {
+    content: '';
+    width: 0.5rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 8%;
+    /* background: rgb(0, 0, 120); */
+    background-color: black;
+    z-index: -1;
+}
+
+#OL_En::before {
+    content: '';
+    width: 1rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 8%;
+    /* background: rgb(0, 0, 120); */
+    background-color: black;
+    z-index: -1;
+}
+
+li {
+    transition: 0.5s;
+    padding: 0.5rem 1.5rem 1rem;
+    border-radius: 1.5rem;
+    /* background-color: rgb(255, 223, 174); */
+    /* background-color: rgb(8, 76, 94); */
+    background-color: rgb(225, 215, 200);
+}
+
+li+li {
+    margin-top: 2rem;
+}
+
+::marker {
+    color: black;
+    font-size: 2rem;
+    font-family: Arial-Black;
+    /* display: none !important; */
+}
+
+@media screen and (max-width :1300px) {
+    .Departements_Links_En {
+        font-size: 20.5px !important;
+    }
+}
+
+@media screen and (max-width : 1150px) {
+    ::marker {
+        font-size: 0rem !important;
+    }
+
+    .Departements_Links_En {
+        font-size: 17.5px !important;
+    }
+
+    .Departements_Links_Ar {
+        font-size: 30px !important;
+    }
+}
+
+@media screen and (max-width : 1000px) {
+    ::marker {
+        font-size: 0rem !important;
+    }
+
+    .Departements_Links_Ar {
+        font-size: 28px !important;
+    }
+
+    .Departements_Links_En {
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (max-width : 900px) {
+    .Departements_Links_Ar {
+        font-size: 25px !important;
+    }
+
+    .Departements_Links_En {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .Departements_Links_Ar {
+        font-size: 21.5px !important;
+    }
+
+    #OL_En {
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+
+    #Institute_Sections_H1 {
+        font-size: 36px !important;
+    }
+}
+
+@media screen and (max-width : 700px) {
+    .Departements_Links_Ar {
+        font-size: 18px !important;
+    }
+
+    #OL_En {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    #Institute_Sections_H1 {
+        font-size: 35px !important;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .Departements_Links_Ar {
+        font-size: 14.5px !important;
+    }
+}
+
+@media screen and (max-width : 500px) {
+
+    #Institute_Sections_H1 {
+        font-size: 30px !important;
+    }
+
+    #OL_Ar {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width : 400px) {
+
+    #Institute_Sections_H1 {
+        font-size: 25px !important;
+    }
+}
+
+@media screen and (max-width : 350px) {
+
+    #Institute_Sections_H1 {
+        font-size: 22px !important;
+    }
+}
+
+@media screen and (max-width : 300px) {
+
+    #Institute_Sections_H1 {
+        font-size: 18px !important;
+    }
+}
