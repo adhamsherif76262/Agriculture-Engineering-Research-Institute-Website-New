@@ -26,11 +26,13 @@ h2,
 dl {
     margin: 0;
 }
-#Central_Laboratory_Final{
+
+#Central_Laboratory_Final {
     width: 90%;
     margin: auto;
     margin-left: 5%;
 }
+
 h1,
 h2,
 h4 {
@@ -71,6 +73,7 @@ ul {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
 }
 
 article {
@@ -251,11 +254,111 @@ dd {
     transform: rotate(90deg);
 }
 
+
+
+
+
+
+
+
+:root {
+    --bg: #fdfdfd;
+    --highlight1: #ED4264;
+    --highlight2: #FFEDBC;
+    --color: black;
+    /* --font-number: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+    --font-head: "Space Mono", Consolas, Menlo, Monaco, "Courier New", monospace;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+}
+
+.list {
+    /* list-style: none; */
+    /* width: 600px; */
+    width: 90%;
+}
+
+.item {
+    display: block;
+    clear: both;
+    counter-increment: list;
+    padding-bottom: 4rem;
+    font-size: 1.1rem;
+    line-height: 1.375;
+    position: relative;
+}
+
+.item:before {
+    /* font: bold 2.25rem/1 var(--font-number); */
+    content: counter(list);
+    /* content: "__>"; */
+    width: 5rem;
+    height: 5rem;
+    float: left;
+    margin: 0 1.5rem 0.75rem 0;
+    /* color: var(--bg); */
+    color: white;
+    background: var(--highlight1) linear-gradient(to bottom right, var(--highlight1) 25%, var(--highlight2));
+    text-shadow: 0 0 2px var(--highlight1);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    shape-outside: ellipse();
+    z-index: 1;
+    font-size: 2rem;
+}
+
+.item:after {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: var(--highlight1);
+    z-index: -1;
+    border-top-left-radius: 3px;
+}
+
+.item>span {
+    font-size: 1.5rem;
+}
+
+.headline {
+    padding: 0rem 0 0 0;
+    margin: 0 0 2rem 0;
+    font-size: 2rem;
+    /* font: normal 2rem var(--font-head); */
+}
+
+/* Demo styles */
+
+#Equipment_OL_Container {
+    width: 90%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg);
+    font-family: var(--font);
+    padding: 4rem 0;
+    background-color: rgb(243, 235, 223);
+    margin: auto;
+}
+
 @media screen and (max-width : 500px) {
     .Types_Div {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .headline {
+        font-size: 1.7rem;
+        /* font: normal 2rem var(--font-head); */
     }
 }
