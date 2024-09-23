@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../CSS/Footer.css">
     <link rel="stylesheet" href="../CSS/Helping_Units.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
@@ -33,12 +34,24 @@
         
     </nav>
     <nav id="English_NavBar"></nav>
+    
     <h1 id="Helping_Units_H1"></h1>
     <img id="Central_Laboratory_Final" src="../Images/Central Laboratory Final .png" alt="">
     <section id="Central_Laboratory"></section>
-<section id="National_Laboratory">
-
-</section>
+        
+    <h2 id="National_Laboratory_H2"></h2>
+    <section id="Carousel_Section">
+        <div id="Arrows_Div_New">
+            <span class="Arrows_New" onclick="changePosition(-1)">&#8592;</span>
+            <span class="Arrows_New" onclick="changePosition(1)">&#8594;</span>
+        </div>
+        <div id="app">
+            <span class="Arrows_Old" onclick="changePosition(-1)">&#8592;</span>
+            <div id="theImage"></div>
+            <span class="Arrows_Old" onclick="changePosition(1)">&#8594;</span>
+        </div>
+    </section>
+    <section id="National_Laboratory"></section>
 
     <section id="Footer_Section">
         <div class="main"></div>
@@ -50,7 +63,6 @@
     <script src="../JavaScript/Arabic_Lang_Button.js"></script>
     <script src="../JavaScript/English_Lang_Button.js"></script>
     <script src="../JavaScript/Storage_Data_Encryption.js"></script>
-
 </body>
 
 </html>

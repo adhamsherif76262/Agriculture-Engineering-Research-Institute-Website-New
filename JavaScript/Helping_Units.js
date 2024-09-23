@@ -2,6 +2,8 @@ var Helping_Units_Title = document.getElementById("Helping_Units_Page_Title");
 var Helping_Units_H1 = document.getElementById("Helping_Units_H1");
 var Central_Laboratory = document.getElementById("Central_Laboratory");
 var National_Laboratory = document.getElementById("National_Laboratory");
+var National_Laboratory_H2 = document.getElementById("National_Laboratory_H2");
+var Carousel_Section = document.getElementById("Carousel_Section");
 
 var Central_Laboratory_Ar = `
   <p id="Overview_P">
@@ -173,7 +175,6 @@ var Central_Laboratory_En = `
 `;
 
 var National_Laboratory_Ar = `
-    <h2>المعمل القومي لاختبار مكونات شبكات الري الحقلي:</h2>
     <p id="Overview_P">
         يُعد المعمل القومي لاختبار مكونات شبكات الري الحقلي جزءاً أساسياً من قسم بحوث هندسة الري والصرف الحقلي في معهد
         بحوث الهندسة الزراعية، التابع لوزارة الزراعة واستصلاح الأراضي. يهدف المعمل إلى تقديم خدمات متكاملة تختص باختبار
@@ -221,28 +222,27 @@ var National_Laboratory_Ar = `
     <h2>الأجهزة المستخدمة في المعمل</h2>
     <div id="Equipment_OL_Container">
         <ol class="list">
-            <li class="item">
-                <h5 class="headline">Ultrasonic Flow Meter: </h5>
+            <li class="item_Ar">
+                <h5 class="headline">عداد تدفق الموجات فوق الصوتية</h5>
                 <span>جهاز لقياس سرعة تدفق الماء داخل الأنابيب، مما يساعد في تحديد تصرف الأنابيب ونوع السريان (رقائقي أو
                     مضطرب).</span>
             </li>
-            <li class="item">
-                <h5 class="headline">Burst Pressure Test Facility: </h5>
+            <li class="item_Ar">
+                <h5 class="headline">منشأة اختبار ضغط الانفجار</h5>
                 <span>لقياس مدى تحمل الأنابيب للضغط العالي.</span>
             </li>
-            <li class="item">
-                <h5 class="headline">Drip Flow Rate Laboratory Test Facility: </h5>
+            <li class="item_Ar">
+                <h5 class="headline">منشأة اختبار معدل تدفق التنقيط</h5>
                 <span>لاختبار معدلات التدفق في أنظمة الري بالتنقيط.</span>
             </li>
-            <li class="item">
-                <h5 class="headline">Clogging Susceptibility for Drip Irrigation System Test Facility:</h5>
+            <li class="item_Ar">
+                <h5 class="headline">منشأة اختبار قابلية انسداد نظام الري بالتنقيط</h5>
                 <span>لتقييم مدى عرضة أنظمة الري بالتنقيط للانسداد.</span>
             </li>
         </ol>
     </div>
 `;
 var National_Laboratory_En = `
-    <h2>The National Laboratory for Testing Field Irrigation Networks</h2>
     <p id="Overview_P">
         The National Laboratory for Testing Field Irrigation Networks Components is part of the Department of Irrigation
         and Drainage Engineering at the Agricultural Engineering Research Institute, under the Ministry of Agriculture
@@ -315,21 +315,166 @@ var National_Laboratory_En = `
         </ol>
     </div>
 `;
+  
+const images = [
+  // "../../../../Desktop/National_Laboratory_1.png",
+  "../Images/National_Laboratory_1.png",
+  // "../../../../Desktop/National_Laboratory_2.png",
+  "../Images/National_Laboratory_2.png",
+  // "../../../../Desktop/National_Laboratory_3.png",
+  "../Images/National_Laboratory_3.png",
+  // "../../../../Desktop/National_Laboratory_4.jpg",
+  "../Images/National_Laboratory_4.jpg",
+  //   "https://s3-us-west-2.amazonaws.com/s.cdpn.io/394353/supermario.jpg",
+  //   "https://s3-us-west-2.amazonaws.com/s.cdpn.io/394353/donkeykong.jpg",
+  //   "https://s3-us-west-2.amazonaws.com/s.cdpn.io/394353/waluigi.jpg",
+];
+
+
+const X_CHANGE = 1000;
+const Y_CHANGE = 1000;
+const IMAGE_PIECE_COUNT = 20;
+const ROTATION = 25;
+
+let indy = 0;
+let isChanging = false;
+
+function removeImage() {
+  return new Promise((resolve) => {
+    for (let i = 0; i < IMAGE_PIECE_COUNT; i++) {
+      const chunk = document.getElementById(`chunk${i}`);
+
+      TweenMax.to(chunk, 1, {
+        rotation: ROTATION,
+        ease: Strong.easeInOut,
+        onComplete: () => {
+          TweenMax.fromTo(
+            chunk,
+            1,
+            { x: 0, y: 0 },
+            {
+              y: i % 2 === 0 ? -Y_CHANGE : Y_CHANGE,
+              x: i % 2 === 0 ? -X_CHANGE : X_CHANGE,
+              ease: Strong.easeInOut,
+              onComplete: () => {
+                chunk.parentNode.removeChild(chunk);
+                if (i === IMAGE_PIECE_COUNT - 1) resolve(true);
+              },
+            }
+          );
+        },
+      });
+    }
+  });
+}
+
+function displayImage(index) {
+  const src = images[index];
+  const image = new Image();
+  image.src = src;
+
+  image.onload = function () {
+    const imageWidth = image.width;
+    const imageHeight = image.height;
+
+    const chunkHeight = Math.floor(imageHeight / IMAGE_PIECE_COUNT);
+    const chunkWidth = imageWidth;
+
+    for (let i = 0; i < IMAGE_PIECE_COUNT; i++) {
+      const chunk = document.createElement("div");
+
+      chunk.id = `chunk${i}`;
+      chunk.style.background = `url('${src}') no-repeat`;
+      chunk.style.backgroundSize = `${imageWidth}px ${imageHeight}px`;
+
+      // Calculate background position in percentage to fit the chunks evenly
+      const yPosPercent = (i * 100) / IMAGE_PIECE_COUNT;
+
+      chunk.style.backgroundPosition = `0% ${yPosPercent}%`;
+      chunk.style.height = `${chunkHeight}px`;
+      chunk.style.width = `${chunkWidth}px`;
+
+      // The last chunk may need to take the remaining height to avoid gaps
+      if (i === IMAGE_PIECE_COUNT - 1) {
+        chunk.style.height = `${
+          imageHeight - chunkHeight * (IMAGE_PIECE_COUNT - 1)
+        }px`;
+      }
+
+      document.getElementById("theImage").appendChild(chunk);
+
+      TweenMax.fromTo(
+        chunk,
+        1,
+        {
+          x: i % 2 === 0 ? -X_CHANGE : X_CHANGE,
+          y: i % 2 === 0 ? Y_CHANGE : -Y_CHANGE,
+          rotation: -ROTATION,
+        },
+        {
+          y: 0,
+          x: 0,
+          ease: Strong.easeInOut,
+          onComplete: () => {
+            TweenMax.to(chunk, 1, {
+              rotation: 0,
+              ease: Strong.easeInOut,
+              onComplete: () => (isChanging = false),
+            });
+          },
+        }
+      );
+    }
+  };
+}
+
+function changePosition(movement) {
+  // Ensure that switching doesn't happen if a switch is already happening
+  if (!isChanging) {
+    indy = (indy + movement + images.length) % images.length;
+
+    isChanging = true;
+    removeImage().then(() => displayImage(indy));
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+//   const targetSection = document.getElementById("targetSection");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+              displayImage(indy);
+
+        //   alert("You've scrolled to the target section!");
+          observer.unobserve(Carousel_Section); // Optional: Stop observing after the first alert
+        }
+      });
+    },
+    { threshold: 1.0 }
+  ); // Adjust the threshold as needed
+
+  observer.observe(Carousel_Section);
+});
+
 function Helping_Units_Load_Content_Ar() {
   Helping_Units_H1.textContent = "المعمل المركزي لأجهزة القياس";
   HomePageTitle[0].innerHTML = "وحدات مساعدة";
   Central_Laboratory.innerHTML = Central_Laboratory_Ar;
   Central_Laboratory.style.direction = "rtl";
+  National_Laboratory_H2.textContent = "المعمل القومي لاختبار مكونات شبكات الري الحقلي:";
   National_Laboratory.innerHTML = National_Laboratory_Ar;
-  National_Laboratory.style.direction = "rtl"
+  National_Laboratory.style.direction = "rtl";
 }
 function Helping_Units_Load_Content_En() {
   Helping_Units_H1.textContent = "Central Laboratory for Measurement Devices";
   HomePageTitle[0].innerHTML = "AERI Helping Units Page";
   Central_Laboratory.innerHTML = Central_Laboratory_En;
   Central_Laboratory.style.direction = "ltr";
+  National_Laboratory_H2.textContent = "The National Laboratory for Testing Field Irrigation Networks"
   National_Laboratory.innerHTML = National_Laboratory_En;
-  National_Laboratory.style.direction = "ltr"
+  National_Laboratory.style.direction = "ltr";
 }
 
 if (localStorage.getItem("Permenant_Language") === "English") {
