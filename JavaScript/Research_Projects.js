@@ -1,8 +1,138 @@
 var Research_ProjectsTitle = document.getElementById("Research_Projects_Page_Title");
 var Research_Projects_H1 = document.getElementById("Research_Projects_H1");
+var Carousel_Section = document.getElementById("Carousel_Section");
+
+var Carousel_Section_Ar = `
+  <div class="carousel-caption">
+      <h1>Carousel Caption</h1> <!-- This will be dynamically updated -->
+  </div>
+  <div class="carousel-container">
+      <div class="carousel">
+          <div class="carousel-slide slide1 active"></div>
+          <div class="carousel-slide slide2"></div>
+          <div class="carousel-slide slide3"></div>
+          <div class="carousel-slide slide4"></div>
+          <div class="carousel-slide slide5"></div>
+          <div class="carousel-slide slide6"></div>
+          <div class="carousel-slide slide7"></div>
+          <div class="carousel-slide slide8"></div>
+          <div class="carousel-slide slide9"></div>
+          <div class="carousel-slide slide10"></div>
+          <div class="carousel-slide slide11"></div>
+          <div class="carousel-slide slide12"></div>
+          <div class="carousel-slide slide13"></div>
+          <div class="carousel-slide slide14"></div>
+          <div class="carousel-slide slide15"></div>
+          <div class="carousel-slide slide16"></div>
+      </div>
+      <!-- Indicators -->
+      <div class="indicators">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+      </div>
+      <!-- Buttons for slide selection -->
+      <div class="slide-buttons">
+          <button type="button" class="slide-button" data-index="0">١</button>
+          <button type="button" class="slide-button" data-index="1">٢</button>
+          <button type="button" class="slide-button" data-index="2">٣</button>
+          <button type="button" class="slide-button" data-index="3">٤</button>
+          <button type="button" class="slide-button" data-index="4">٥</button>
+          <button type="button" class="slide-button" data-index="5">٦</button>
+          <button type="button" class="slide-button" data-index="6">٧</button>
+          <button type="button" class="slide-button" data-index="7">٨</button>
+          <button type="button" class="slide-button" data-index="8">٩</button>
+          <button type="button" class="slide-button" data-index="9">١٠</button>
+          <button type="button" class="slide-button" data-index="10">١١</button>
+          <button type="button" class="slide-button" data-index="11">١٢</button>
+          <button type="button" class="slide-button" data-index="12">١٣</button>
+          <button type="button" class="slide-button" data-index="13">١٤</button>
+          <button type="button" class="slide-button" data-index="14">١٥</button>
+          <button type="button" class="slide-button" data-index="15">١٦</button>
+      </div>
+  </div>
+`;
+var Carousel_Section_En = `
+          <div class="carousel-caption">
+            <h1>Carousel Caption</h1> <!-- This will be dynamically updated -->
+        </div>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide slide1 active"></div>
+                <div class="carousel-slide slide2"></div>
+                <div class="carousel-slide slide3"></div>
+                <div class="carousel-slide slide4"></div>
+                <div class="carousel-slide slide5"></div>
+                <div class="carousel-slide slide6"></div>
+                <div class="carousel-slide slide7"></div>
+                <div class="carousel-slide slide8"></div>
+                <div class="carousel-slide slide9"></div>
+                <div class="carousel-slide slide10"></div>
+                <div class="carousel-slide slide11"></div>
+                <div class="carousel-slide slide12"></div>
+                <div class="carousel-slide slide13"></div>
+                <div class="carousel-slide slide14"></div>
+                <div class="carousel-slide slide15"></div>
+                <div class="carousel-slide slide16"></div>
+            </div>
+            <!-- Indicators -->
+            <div class="indicators">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <!-- Buttons for slide selection -->
+            <div class="slide-buttons">
+                <button type="button" class="slide-button" data-index="0">1</button>
+                <button type="button" class="slide-button" data-index="1">2</button>
+                <button type="button" class="slide-button" data-index="2">3</button>
+                <button type="button" class="slide-button" data-index="3">4</button>
+                <button type="button" class="slide-button" data-index="4">5</button>
+                <button type="button" class="slide-button" data-index="5">6</button>
+                <button type="button" class="slide-button" data-index="6">7</button>
+                <button type="button" class="slide-button" data-index="7">8</button>
+                <button type="button" class="slide-button" data-index="8">9</button>
+                <button type="button" class="slide-button" data-index="9">10</button>
+                <button type="button" class="slide-button" data-index="10">11</button>
+                <button type="button" class="slide-button" data-index="11">12</button>
+                <button type="button" class="slide-button" data-index="12">13</button>
+                <button type="button" class="slide-button" data-index="13">14</button>
+                <button type="button" class="slide-button" data-index="14">15</button>
+                <button type="button" class="slide-button" data-index="15">16</button>
+            </div>
+        </div>
+`;
 function Research_Projects_Load_Content_Ar() {
   Research_Projects_H1.textContent = "المشاريع البحثية بالمعهد";
   HomePageTitle[0].innerHTML = "مشاريع بحثية";
+  Carousel_Section.innerHTML = Carousel_Section_Ar;
+  Carousel_Section.style.direction = "rtl";
   const slides = document.querySelectorAll(".carousel-slide");
   const dots = document.querySelectorAll(".dot");
   const buttons = document.querySelectorAll(".slide-button");
@@ -62,6 +192,8 @@ function Research_Projects_Load_Content_Ar() {
 function Research_Projects_Load_Content_En() {
   Research_Projects_H1.textContent = "Institute Research Projects";
   HomePageTitle[0].innerHTML = "AERI Research Projects Page";
+  Carousel_Section.innerHTML = Carousel_Section_En;
+  Carousel_Section.style.direction = "ltr";
   const slides = document.querySelectorAll(".carousel-slide");
   const dots = document.querySelectorAll(".dot");
   const buttons = document.querySelectorAll(".slide-button");
