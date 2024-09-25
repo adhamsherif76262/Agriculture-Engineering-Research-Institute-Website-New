@@ -1,0 +1,254 @@
+@font-face {
+    font-family: PT-Bold-Heading;
+    src: url(../Fonts/PT\ Bold\ Heading.ttf);
+}
+
+@font-face {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    src: url(../Fonts/ArbFONTS-OMNES-ARABIC-BOLD.ttf);
+}
+
+@font-face {
+    font-family: Omnes-Arabic-HairLine;
+    src: url(../Fonts/ArbFONTS-OMNES-ARABIC-REGULAR.ttf);
+}
+
+@font-face {
+    font-family: Arial-Black;
+    src: url(../Fonts/Arial\ Black.ttf);
+}
+
+#Research_Projects_H1 {
+    text-align: center;
+    font-family: Omnes-Arabic-HairLine-Bold;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#Carousel_Section {
+    font-family: Omnes-Arabic-HairLine-Bold !important;
+    background: rgb(243, 235, 223);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Caption styling */
+.carousel-caption {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+    /* Space between caption and carousel */
+    color: white;
+    /* background: rgba(0, 0, 0, 0.6); */
+    background: black;
+    padding: 0.5em 0.5em;
+    border-radius: 10px;
+    position: relative;
+    /* Position relative for any absolute children if needed */
+    z-index: 5;
+    /* Ensure caption stays on top of other elements */
+}
+
+/* Container for the carousel and the indicators */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Carousel styling */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* height: auto; */
+    position: relative;
+    overflow: hidden;
+    /* Full height */
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+/* Background images */
+.slide1 {
+    background-image: url(../Images/RP_Picture_1.jpg);
+}
+
+.slide2 {
+    background-image: url(../Images/Picture2.jpg);
+}
+
+.slide3 {
+    background-image: url(../Images/Picture1.jpg);
+}
+
+.slide4 {
+    background-image: url(../Images/RP_Picture_4.jpg);
+}
+
+.slide5 {
+    background-image: url(../Images/Picture3.jpg);
+}
+
+.slide6 {
+    background-image: url(../Images/RP_Picture_6.jpg);
+}
+
+.slide7 {
+    background-image: url(../Images/Picture4.jpg);
+}
+
+.slide8 {
+    background-image: url(../Images/Picture5.png);
+}
+
+.slide9 {
+    background-image: url(../Images/Picture6.jpg);
+}
+
+.slide10 {
+    background-image: url(../Images/Picture7.png);
+}
+
+.slide11 {
+    background-image: url(../Images/RP_Picture_11.jpg);
+}
+
+.slide12 {
+    background-image: url(../Images/RP_Picture_12.jpg);
+}
+
+.slide13 {
+    background-image: url(../Images/RP_Picture_13.jpg);
+}
+
+.slide14 {
+    background-image: url(../Images/Picture10.jpg);
+}
+
+.slide15 {
+    background-image: url(../Images/RP_Picture_15.png);
+}
+
+.slide16 {
+    background-image: url(../Images/RP_Picture_16.png);
+}
+
+/* Dot Indicators */
+.indicators {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 2%;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: rgb(243, 235, 223);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: rgb(243, 235, 223);
+    /* Highlight the active dot */
+}
+
+/* Button styles */
+.slide-buttons {
+    margin-top: 10px;
+    position: relative;
+    /* Make sure buttons stay on top */
+    z-index: 10;
+    /* Ensure buttons are on top of dots */
+}
+
+.slide-button {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    padding: 10px 25px;
+    margin-top: 25px !important;
+    margin-left: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slide-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.slide-button:focus {
+    outline: none;
+    /* Remove outline on focus */
+}
+
+/* Active button styles */
+.slide-button.active {
+    /* background-color: rgba(0, 123, 255, 1); */
+    background-color: black;
+    /* Change color to indicate active state */
+    color: white;
+    /* Change text color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel {
+        height: 70vh;
+    }
+
+    .slide-button {
+        font-family: Omnes-Arabic-HairLine-Bold;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: none;
+        border-radius: 5px;
+        font-size: 1.5rem !important;
+        padding: 10px 20px !important;
+        margin-top: 25px !important;
+        margin-left: 8px;
+        margin-right: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body,
+    #Carousel_Section {
+        overflow-x: hidden;
+    }
+
+    .carousel {
+        height: 60vh;
+    }
+}
