@@ -18,6 +18,22 @@
     src: url(../Fonts/Arial\ Black.ttf);
 }
 
+body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+html {
+
+    overflow-x: hidden !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* canvas{
+    max-height: 200px;
+} */
 /**Carousel Section**/
 
 #Overview_H1 {
@@ -178,6 +194,15 @@
     width: 60%;
 }
 
+/**Training Section**/
+#Training_H2 {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
 
 /**Activities Section**/
 *,
@@ -286,6 +311,12 @@ li {
         width: 20px;
     }
 
+    #Trainees_Section {
+        margin-top: -100px !important;
+        max-height: 500px;
+        z-index: -1;
+    }
+
     .episode__content {
         grid-template-columns: 1fr;
     }
@@ -344,6 +375,12 @@ li {
         margin: 0 0 15px 0;
         font-size: 30px;
         line-height: 3rem;
+    }
+
+    #Trainees_Section {
+        margin-top: -150px !important;
+        max-height: 400px;
+        z-index: -1;
     }
 
     .episode__number_Ar {

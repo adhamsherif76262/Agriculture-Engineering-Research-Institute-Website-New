@@ -2,6 +2,7 @@ var Overview_Title = document.getElementById("Overview_Page_Title");
 var Overview_H1 = document.getElementById("Overview_H1");
 var Carousel_Section = document.getElementById("Carousel_Section");
 var Misson_Vision_Section = document.getElementById("Misson_Vision_Section");
+var Training_H2 = document.getElementById("Training_H2");
 var Activities_Section = document.getElementById("Activities_Section");
 
 var Carousel_Section_Ar = `
@@ -297,73 +298,123 @@ var Activities_Section_En = `
   </article>
 </div>
 `;
-document.addEventListener("DOMContentLoaded", function () {
-  let carousel = document.querySelector(".carousel");
-  let items = carousel.querySelectorAll(".item");
-  let dotsContainer = document.querySelector(".dots");
 
-  // Insert dots into the DOM
-  items.forEach((_, index) => {
-    let dot = document.createElement("span");
-    dot.classList.add("dot");
-    if (index === 0) dot.classList.add("active");
-    dot.dataset.index = index;
-    dotsContainer.appendChild(dot);
-  });
-
-  let dots = document.querySelectorAll(".dot");
-
-  // Function to show a specific item
-  function showItem(index) {
-    items.forEach((item, idx) => {
-      item.classList.remove("active");
-      dots[idx].classList.remove("active");
-      if (idx === index) {
-        item.classList.add("active");
-        dots[idx].classList.add("active");
-      }
-    });
-  }
-
-  // Event listeners for buttons
-  document.querySelector(".prev").addEventListener("click", () => {
-    let index = [...items].findIndex((item) =>
-      item.classList.contains("active")
-    );
-    showItem((index - 1 + items.length) % items.length);
-  });
-
-  document.querySelector(".next").addEventListener("click", () => {
-    let index = [...items].findIndex((item) =>
-      item.classList.contains("active")
-    );
-    showItem((index + 1) % items.length);
-  });
-
-  // Event listeners for dots
-  dots.forEach((dot) => {
-    dot.addEventListener("click", () => {
-      let index = parseInt(dot.dataset.index);
-      showItem(index);
-    });
-  });
-});
 
 function Overview_Load_Content_Ar() {
   Overview_H1.textContent = "نبذة عن المعهد";
   HomePageTitle[0].innerHTML = "نبذة";
   Carousel_Section.innerHTML = Carousel_Section_Ar;
   Misson_Vision_Section.innerHTML = Misson_Vision_Section_Ar;
+  Training_H2.innerHTML="صور التدريب";
   Activities_Section.innerHTML = Activities_Section_Ar;
   Activities_Section.style.direction = "rtl"
+    let carousel = document.querySelector(".carousel");
+    let items = carousel.querySelectorAll(".item");
+    let dotsContainer = document.querySelector(".dots");
+
+    // Insert dots into the DOM
+    items.forEach((_, index) => {
+      let dot = document.createElement("span");
+      dot.classList.add("dot");
+      if (index === 0) dot.classList.add("active");
+      dot.dataset.index = index;
+      dotsContainer.appendChild(dot);
+    });
+
+    let dots = document.querySelectorAll(".dot");
+
+    // Function to show a specific item
+    function showItem(index) {
+      items.forEach((item, idx) => {
+        item.classList.remove("active");
+        dots[idx].classList.remove("active");
+        if (idx === index) {
+          item.classList.add("active");
+          dots[idx].classList.add("active");
+        }
+      });
+    }
+
+    // Event listeners for buttons
+    document.querySelector(".prev").addEventListener("click", () => {
+      let index = [...items].findIndex((item) =>
+        item.classList.contains("active")
+      );
+      showItem((index - 1 + items.length) % items.length);
+    });
+
+    document.querySelector(".next").addEventListener("click", () => {
+      let index = [...items].findIndex((item) =>
+        item.classList.contains("active")
+      );
+      showItem((index + 1) % items.length);
+    });
+
+    // Event listeners for dots
+    dots.forEach((dot) => {
+      dot.addEventListener("click", () => {
+        let index = parseInt(dot.dataset.index);
+        showItem(index);
+      });
+    });
 }
 function Overview_Load_Content_En() {
   Overview_H1.textContent = "An Overview";
   HomePageTitle[0].innerHTML = "AERI Overview Page";
   Carousel_Section.innerHTML = Carousel_Section_En;
   Misson_Vision_Section.innerHTML = Misson_Vision_Section_En;
+  Training_H2.innerHTML = "Training Photos";
   Activities_Section.innerHTML = Activities_Section_En;
   Activities_Section.style.direction = "ltr"
+    let carousel = document.querySelector(".carousel");
+    let items = carousel.querySelectorAll(".item");
+    let dotsContainer = document.querySelector(".dots");
+
+    // Insert dots into the DOM
+    items.forEach((_, index) => {
+      let dot = document.createElement("span");
+      dot.classList.add("dot");
+      if (index === 0) dot.classList.add("active");
+      dot.dataset.index = index;
+      dotsContainer.appendChild(dot);
+    });
+
+    let dots = document.querySelectorAll(".dot");
+
+    // Function to show a specific item
+    function showItem(index) {
+      items.forEach((item, idx) => {
+        item.classList.remove("active");
+        dots[idx].classList.remove("active");
+        if (idx === index) {
+          item.classList.add("active");
+          dots[idx].classList.add("active");
+        }
+      });
+    }
+
+    // Event listeners for buttons
+    document.querySelector(".prev").addEventListener("click", () => {
+      let index = [...items].findIndex((item) =>
+        item.classList.contains("active")
+      );
+      showItem((index - 1 + items.length) % items.length);
+    });
+
+    document.querySelector(".next").addEventListener("click", () => {
+      let index = [...items].findIndex((item) =>
+        item.classList.contains("active")
+      );
+      showItem((index + 1) % items.length);
+    });
+
+    // Event listeners for dots
+    dots.forEach((dot) => {
+      dot.addEventListener("click", () => {
+        let index = parseInt(dot.dataset.index);
+        showItem(index);
+      });
+    });
 }
 
 if (localStorage.getItem("Permenant_Language") === "English") {
