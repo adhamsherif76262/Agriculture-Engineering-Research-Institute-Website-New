@@ -14,14 +14,15 @@ var IMAGESpath = ".";
 if (location.href.includes("/Home") || location.href.includes("/home")){
   alert(`I${HTMLpath}am${HTMLpath}Home`);
   HTMLpath = "./HTML/";
-  IMAGESpath = ""
+  IMAGESpath = "";
 }
 else if (location.href.includes("/Departements") || location.href.includes("/departements")){
   alert(`I ${HTMLpath} am ${location.href}  Departement`);
   HTMLpath = "../";
   IMAGESpath = "./..";
 }
-
+{/* <img src="../Images/AENRI_Logo.png" alt=""> */}
+{/* <img src="../Images/Biochar Production .png" alt=""> */}
 var Bubbles = `<div class="bubbles">
     <div class="bubble" style="--size:5.0135313648835025rem; --distance:9.416550778957694rem; --position:19.903269440715132%; --time:3.254147592799995s; --delay:-2.7348329494573114s;"></div>
     <div class="bubble" style="--size:4.137121420921593rem; --distance:7.675318118080081rem; --position:94.55828450308567%; --time:2.4472531580422068s; --delay:-3.5833354183932897s;"></div>
@@ -152,10 +153,27 @@ var Bubbles = `<div class="bubbles">
     <div class="bubble" style="--size:5.070638612044997rem; --distance:8.768344688468623rem; --position:103.16122067513483%; --time:2.3282762473104923s; --delay:-2.8247758673337624s;"></div>
     <div class="bubble" style="--size:4.491823131077235rem; --distance:9.386743631507379rem; --position:5.764877879512337%; --time:2.0585748615664774s; --delay:-3.073787829849765s;"></div>
   </div>`;
-
 var Ar_NavTemplate = `
   <div id="Upper_NavBar_Ar" class="Flex_Direction_Ar">
-    <a class="ARC_Logo" href=".${IMAGESpath}/Home.html"><img class="NavBar_Logos" src=".${IMAGESpath}/Images/AERI-ARC-Logo_-removebg .png" alt="Agriculture Engineering Institute Logo"></a>
+  <a class="ARC_Logo" href=".${IMAGESpath}/Home.html">
+    <div class="cube-container">
+      <div class="cube">
+        <div class="face front">
+          <img class="NavBar_Logos" src=".${IMAGESpath}/Images/AENRI_Logo.png" alt="Agriculture Engineering Institute Logo">
+        </div>
+        <div class="face back">
+          <img class="NavBar_Logos" src=".${IMAGESpath}/Images/AENRI_Logo.png" alt="Agriculture Engineering Institute Logo">
+        </div>
+        <div class="face right">
+          <img class="NavBar_Logos" src=".${IMAGESpath}/Images/AERI-ARC-Logo_-removebg .png" alt="Agriculture Engineering Institute Logo">
+        </div>
+        <div class="face left">
+          <img class="NavBar_Logos" src=".${IMAGESpath}/Images/AERI-ARC-Logo_-removebg .png" alt="Agriculture Engineering Institute Logo">
+        </div>
+      </div>
+    </div>
+
+    </a>
     <p id="NavBar_P_Ar">معهد بحوث الهندسة الزراعية</p>
     ${LangBtnEn}
   </div>
@@ -167,7 +185,7 @@ var Ar_NavTemplate = `
           <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./${HTMLpath}Helping_Units.html">وحدات مساعدة</a>
           <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./${HTMLpath}Institute_Branches.html">فروع المعهد</a>
           <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./${HTMLpath}Patents.html">التطبيقات التكنولوجية</a>
-          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./${HTMLpath}Permanent_Exhibition.html">المديرين السابقين</a>
+          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./${HTMLpath}Previous_Presidents.html">المديرين السابقين</a>
           <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./${HTMLpath}Research_Projects.html">مشاريع بحثية</a>
           <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./${HTMLpath}Overview.html">نبذة</a>
           <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./${HTMLpath}Collaborations.html">التعاونات</a>
@@ -178,7 +196,24 @@ var Ar_NavTemplate = `
 
 var En_NavTemplate = `
 <div id="Upper_NavBar_En" class="Flex_Direction_En">
-<a class="ARC_Logo" href=".${IMAGESpath}/Home.html"><img class="NavBar_Logos" src=".${IMAGESpath}/Images/AERI-ARC-Logo_-removebg .png" alt="Agriculture Engineering Institute Logo"></a>
+<a class="ARC_Logo" href=".${IMAGESpath}/Home.html">
+    <div class="cube-container">
+      <div class="cube">
+        <div class="face front">
+          <img class="NavBar_Logos" src=".${IMAGESpath}/Images/AENRI_Logo.png" alt="Agriculture Engineering Institute Logo">
+        </div>
+        <div class="face back">
+          <img class="NavBar_Logos" src=".${IMAGESpath}/Images/AENRI_Logo.png" alt="Agriculture Engineering Institute Logo">
+        </div>
+        <div class="face right">
+          <img class="NavBar_Logos" src=".${IMAGESpath}/Images/AERI-ARC-Logo_-removebg .png" alt="Agriculture Engineering Institute Logo">
+        </div>
+        <div class="face left">
+          <img class="NavBar_Logos" src=".${IMAGESpath}/Images/AERI-ARC-Logo_-removebg .png" alt="Agriculture Engineering Institute Logo">
+        </div>
+      </div>
+    </div>
+</a>
 
 <p id="NavBar_P_En">Agriculture Engineering Research Institute</p>
 ${LangBtnAr}
@@ -189,7 +224,7 @@ ${LangBtnAr}
                 <a onmouseover="Mouse_Over(this); Mouse_Over_Special(this);" onmouseout="Mouse_Leave(this); Mouse_Leave_Special(this);" class="Nav_Links Nav_Links_En" href="./${HTMLpath}Collaborations.html">Collaborations</a>
                 <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./${HTMLpath}Overview.html">Overview</a>
                 <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./${HTMLpath}Research_Projects.html">Research Projects</a>
-                <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./${HTMLpath}Permanent_Exhibition.html">Previous Presidents</a>
+                <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./${HTMLpath}Previous_Presidents.html">Previous Presidents</a>
                 <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./${HTMLpath}Patents.html">Technological Applications</a>
                 <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./${HTMLpath}Institute_Branches.html">Institute Branches</a>
                 <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./${HTMLpath}Helping_Units.html">Helping Units</a>
@@ -207,32 +242,23 @@ ${LangBtnAr}
 var Ar_FooterTemplate = `
     ${Bubbles}
 <div class="content">
-
     <div id = "Navigation_Links_Footer_Div_Ar">
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفوsssssssssssssssssssن</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفوsssssssssssssssssssن</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفوsssssssssssssssssssن</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفوsssssssssssssssssssن</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفوsssssssssssssssssssن</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفوsssssssssssssssssssن</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفوsssssssssssssssssssن</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفوsssssssssssssssssssن</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفوsssssssssssssssssssن</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفوsssssssssssssssssssن</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفون</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفون</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفون</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفون</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفون</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفون</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفون</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفون</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفون</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفون</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفون</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفون</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفون</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="#">التليفون</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="${HTMLpath}Institute_Sections.html">الأقسام</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="${HTMLpath}Helping_Units.html">وحدات مساعدة</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="${HTMLpath}Institute_Branches.html">فروع المعهد</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="${HTMLpath}Patents.html">التطبيقات التكنولوجية</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="${HTMLpath}Previous_Presidents.html">المديرين السابقين</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="${HTMLpath}Research_Projects.html">مشاريع بحثية</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="${HTMLpath}Overview.html">نبذة</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="${HTMLpath}Collaborations.html">التعاونات</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="${HTMLpath}Departements/Agricultural_Mechanization_OS.html">ميكنة العمليات الزراعية</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="${HTMLpath}Departements/Animal_Production_Mechanization.html"> الانتاج الحيوانى </a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="${HTMLpath}Departements/Agricultural_Power_Energy.html">القوى والطاقة</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="${HTMLpath}Departements/Irrigation_Engineering_RD.html">الرى والصرف الحقلى</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="${HTMLpath}Departements/Handling_Processing_D.html">تصنيع وتداول المنتجات </a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="${HTMLpath}Departements/Biological_Engineering.html"> الهندسة الحيوية الزراعية</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="${HTMLpath}Departements/Rice_Mechanization_Center.html">مركز ميكنة الارز</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_Ar" href="${HTMLpath}Departements/Testing_Reasearch_Station.html">محطة أبحاث و أختبار الجرارات</a>
     </div>
     <div id = "Upper_Footer_Left_Ar">
       <div id = "Footer_ContactInfo_Ar">
@@ -288,12 +314,12 @@ var En_FooterTemplate = `
                 </div>
                 <img width = "45px" src = ".${IMAGESpath}/Images/noun-address-2048877.png" alt = "Email Address Icon">
             </div>
-            <div class = "Single_Contact_Info Single_Contact_Info_En">
+            <div class = "Single_Contact_Info Single_Contact_Info_En Single_Contact_Info_En_Special">
                 <span>Land Line: (202)</span>
                 <span id = "Land_Line_Span_En">37487212 - 33375853</span>
                 <img width = "50px" src = ".${IMAGESpath}/Images/noun-phone-2632790.png" alt = "Email Address Icon">
             </div>
-            <div class = "Single_Contact_Info Single_Contact_Info_En">
+            <div class = "Single_Contact_Info Single_Contact_Info_En Single_Contact_Info_En_Special">
             <span>Email:</span>
                 <a id = "Contact_Email_En" href="mailto:aenri@aenri.org?&subject=Mail from xyz.com&body=Dear AENRI.org" target="_blank">aenri@aenri.org</a>
                 <img width = "45px" src = ".${IMAGESpath}/Images/noun-email-6924545.png" alt = "Email Address Icon">
@@ -306,30 +332,22 @@ var En_FooterTemplate = `
       </div>
   </div>
     <div id = "Navigation_Links_Footer_Div_En">
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Linkssssssssssssssssss</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
-        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="#">Link</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="${HTMLpath}Institute_Sections.html">Institute Sections</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="${HTMLpath}Institute_Branches.html">Institute Branches</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="${HTMLpath}Helping_Units.html">Helping Units</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="${HTMLpath}Patents.html">Technological Applications</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="${HTMLpath}Previous_Presidents.html">Previous Presidents</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="${HTMLpath}Research_Projects.html">Research Projects</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="${HTMLpath}Overview.html">Overview</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="${HTMLpath}Collaborations.html">Collaborations</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="${HTMLpath}Departements/Agricultural_Mechanization_OS.html">Agricultural Mechanization</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="${HTMLpath}Departements/Animal_Production_Mechanization.html">Animal Production</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="${HTMLpath}Departements/Agricultural_Power_Energy.html">Agricultural Power</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="${HTMLpath}Departements/Irrigation_Engineering_RD.html">Irrigation Engineering</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="${HTMLpath}Departements/Handling_Processing_D.html">Crop Handling</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="${HTMLpath}Departements/Biological_Engineering.html">Bilogical Engineering</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="${HTMLpath}Departements/Rice_Mechanization_Center.html">Rice Mechanization Center</a>
+        <a onmouseover="Mouse_Over_Footer(this);" onmouseout="Mouse_Leave_Footer(this);" class = "Nav_Link_Footer Nav_Link_Footer_En" href="${HTMLpath}Departements/Testing_Reasearch_Station.html">Tractor Testing Station</a>
     </div>
       </div>
       <div id = "Lower_Footer_En">
@@ -364,7 +382,7 @@ function Mouse_Over_Footer(anchor) {
     filter: "blur(5px)",
   });
   $(anchor).css({
-    fontSize: "35px",
+    // fontSize: "35px",
     color: "rgb(0, 0, 120)",
     // width: innerWidth,
     height: anchor.innerHeight,
@@ -396,15 +414,15 @@ function Mouse_Leave_Footer(anchor){
     filter: "blur(0px)",
   });
   $(".Nav_Link_Footer_En").css({
-    width: "min-content",
-    height: "fit-content",
-    fontSize: "16px",
+    // width: "max-content",
+    // height: "fit-content",
+    // fontSize: "16px",
     color: "Black",
   });
   $(".Nav_Link_Footer_Ar").css({
-    width: "fit-content",
-    height: "fit-content",
-    fontSize: "16px",
+    // width: "max-content",
+    // height: "fit-content",
+    // fontSize: "16px",
     color: "Black",
   });
 }
@@ -433,246 +451,6 @@ function Mouse_Leave(anchor){
     color: "Black",
   });
 }
-    // function Str_Random(length) {
-    //   let result = "";
-    //   const characters = "abcdefghijklmnopqrstuvwxyz0123456789";
-    //   for (let i = 0; i < length; i++) {
-    //     const randomInd = Math.floor(Math.random() * characters.length);
-    //     result += characters.charAt(randomInd);
-    //   }
-    //   return result;
-    // }
-
-    // const password = Str_Random(100);
-    // alert(`The Password Is ::\t\n ${password}`);
-
-    // async function encryptData(password, data) {
-    //   try {
-    //     const passwordEncoder = new TextEncoder();
-    //     const passwordBytes = passwordEncoder.encode(password);
-    //     const salt = crypto.getRandomValues(new Uint8Array(16));
-    //     const passwordKey = await crypto.subtle.importKey(
-    //       "raw",
-    //       passwordBytes,
-    //       { name: "PBKDF2" },
-    //       false,
-    //       ["deriveKey"]
-    //     );
-    //     const key = await crypto.subtle.deriveKey(
-    //       { name: "PBKDF2", salt: salt, iterations: 1000, hash: "SHA-256" },
-    //       passwordKey,
-    //       { name: "AES-CBC", length: 256 },
-    //       true,
-    //       ["encrypt"]
-    //     );
-    //     const iv = crypto.getRandomValues(new Uint8Array(16));
-    //     const encryptedData = await crypto.subtle.encrypt(
-    //       {
-    //         name: "AES-CBC",
-    //         iv: iv,
-    //       },
-    //       key,
-    //       passwordEncoder.encode(data)
-    //     );
-    //     const encryptedBytes = new Uint8Array(encryptedData);
-    //     const encryptedString = Array.from(encryptedBytes)
-    //       .map((x) => `00${x.toString(16)}`.slice(-2))
-    //       .join("");
-
-    //     // Generate padding strings
-    //     const paddingLength = encryptedBytes.length;
-    //     const padding1 = crypto.getRandomValues(new Uint8Array(paddingLength));
-    //     const padding2 = crypto.getRandomValues(new Uint8Array(paddingLength));
-
-    //     const paddingString1 = Array.from(padding1)
-    //       .map((x) => `00${x.toString(16)}`.slice(-2))
-    //       .join("");
-    //     const paddingString2 = Array.from(padding2)
-    //       .map((x) => `00${x.toString(16)}`.slice(-2))
-    //       .join("");
-
-    //     // Concatenate encrypted string with padding strings
-    //     const paddedEncryptedString =
-    //       encryptedString + paddingString1 + paddingString2;
-
-    //     return {
-    //       iv: Array.from(iv),
-    //       salt: Array.from(salt),
-    //       encryptedData: paddedEncryptedString,
-    //     };
-    //   } catch (error) {
-    //     console.error("Error during encryption:", error);
-    //   }
-    // }
-
-    // var Decrypted_Lang_Value = "ssss";
-
-    // async function decryptData(password) {
-    //   try {
-    //     const passwordEncoder = new TextEncoder();
-    //     const passwordBytes = passwordEncoder.encode(password);
-
-    //     const encryptedDataString = localStorage.getItem("Permenant_Language");
-    //     if (!encryptedDataString) {
-    //       console.error(
-    //         'No data found in localStorage with key "Permenant_Language".'
-    //       );
-    //       return;
-    //     }
-
-    //     const encryptedData = JSON.parse(encryptedDataString);
-    //     const iv = new Uint8Array(encryptedData.iv);
-    //     const salt = new Uint8Array(encryptedData.salt);
-    //     const paddedEncryptedString = encryptedData.encryptedData;
-
-    //     // Calculate the length of the original encrypted data
-    //     const thirdLength = Math.floor(paddedEncryptedString.length / 3);
-    //     const encryptedString = paddedEncryptedString.slice(0, thirdLength);
-
-    //     const encryptedBytes = Array.from(encryptedString.match(/.{2}/g)).map(
-    //       (x) => parseInt(x, 16)
-    //     );
-    //     const encryptedDataBuffer = new Uint8Array(encryptedBytes);
-
-    //     const passwordKey = await crypto.subtle.importKey(
-    //       "raw",
-    //       passwordBytes,
-    //       {
-    //         name: "PBKDF2",
-    //       },
-    //       false,
-    //       ["deriveKey"]
-    //     );
-
-    //     const key = await crypto.subtle.deriveKey(
-    //       {
-    //         name: "PBKDF2",
-    //         salt: salt,
-    //         iterations: 1000,
-    //         hash: "SHA-256",
-    //       },
-    //       passwordKey,
-    //       {
-    //         name: "AES-CBC",
-    //         length: 256,
-    //       },
-    //       true,
-    //       ["decrypt"]
-    //     );
-
-    //     const decryptedData = await crypto.subtle.decrypt(
-    //       {
-    //         name: "AES-CBC",
-    //         iv: iv,
-    //       },
-    //       key,
-    //       encryptedDataBuffer
-    //     );
-
-    //     const decryptedString = new TextDecoder().decode(decryptedData);
-    //     console.log("Decrypted data:", decryptedString);
-    //     alert(`Decrypted Language: ${decryptedString}`);
-    //     // Decrypted_Lang_Value = decryptedString;
-    //     return decryptedString;
-    //   } catch (error) {
-    //     console.error("Error during decryption:", error);
-    //   }
-    // }
-
-
-    // async function decryptData(password) {
-    //   try {
-    //     const passwordEncoder = new TextEncoder();
-    //     const passwordBytes = passwordEncoder.encode(password);
-
-    //     // Retrieve and parse the stored data from localStorage
-    //     const encryptedDataString = localStorage.getItem("Permenant_Language");
-    //     if (!encryptedDataString) {
-    //       console.error(
-    //         'No data found in localStorage with key "Permenant_Language".'
-    //       );
-    //       return null; // Return null if no data is found
-    //     }
-
-    //     const encryptedData = JSON.parse(encryptedDataString);
-    //     const iv = new Uint8Array(encryptedData.iv);
-    //     const salt = new Uint8Array(encryptedData.salt);
-    //     const paddedEncryptedString = encryptedData.encryptedData;
-
-    //     // Calculate the length of the original encrypted data
-    //     const thirdLength = Math.floor(paddedEncryptedString.length / 3);
-    //     const encryptedString = paddedEncryptedString.slice(0, thirdLength);
-
-    //     // Convert the encrypted string back to bytes
-    //     const encryptedBytes = Array.from(encryptedString.match(/.{2}/g)).map(
-    //       (x) => parseInt(x, 16)
-    //     );
-    //     const encryptedDataBuffer = new Uint8Array(encryptedBytes);
-
-    //     // Import the password key
-    //     const passwordKey = await crypto.subtle.importKey(
-    //       "raw",
-    //       passwordBytes,
-    //       { name: "PBKDF2" },
-    //       false,
-    //       ["deriveKey"]
-    //     );
-
-    //     // Derive the AES key
-    //     const key = await crypto.subtle.deriveKey(
-    //       {
-    //         name: "PBKDF2",
-    //         salt: salt,
-    //         iterations: 1000,
-    //         hash: "SHA-256",
-    //       },
-    //       passwordKey,
-    //       { name: "AES-CBC", length: 256 },
-    //       true,
-    //       ["decrypt"]
-    //     );
-
-    //     // Decrypt the data
-    //     const decryptedData = await crypto.subtle.decrypt(
-    //       { name: "AES-CBC", iv: iv },
-    //       key,
-    //       encryptedDataBuffer
-    //     );
-
-    //     // Decode the decrypted data
-    //     const decryptedString = new TextDecoder().decode(decryptedData);
-    //     return decryptedString; // Return the decrypted string
-    //     // console.log("Decrypted data:", decryptedString);
-    //   } 
-    //   catch (error) {
-    //     console.error("Error during decryption:", error);
-    //     return null; // Return null if an error occurs
-    //   }
-    // }
-
-// var Encrypted_Lang_Value = JSON.parse(localStorage.getItem("Permenant_Language")).encryptedData;
-// console.log(Encrypted_Lang_Value);
-// async function Get_Decrypted_Language(){
-//   var Decrypted_Lang_Value = await decryptData(password)
-//   // var Decrypted_Lang_Value = decryptData(password)
-//   console.log(Decrypted_Lang_Value);
-//   if (Decrypted_Lang_Value === "English") {
-//     NavIsEn();
-//   }
-//   if (Decrypted_Lang_Value === "عربي") {
-//     NavIsAR();
-//   }
-//   return Decrypted_Lang_Value
-// }
-
-//  setTimeout(()=>{
-//   var z =  Get_Decrypted_Language();
-//   // console.log("ZZZZZZzz ==== " + JSON.stringify(z.));
-//  },[300])
-
-// Parsed_Lang_Value = decryptData(password)
-// console.log(Decrypted_Lang_Value);
-
 if (localStorage.getItem("Permenant_Language") === "English") {
   NavIsEn();
 }
@@ -682,12 +460,14 @@ if (localStorage.getItem("Permenant_Language") === "عربي") {
   function NavIsAR() {
     Ar_Nav.innerHTML = Ar_NavTemplate;
     Main_Footer[0].innerHTML = Ar_FooterTemplate;
+    // Main_Footer[0].style.direction = "rtl";
     En_Nav.classList.add("D_None");
     Ar_Nav.classList.remove("D_None");
   }
   function NavIsEn(){
     En_Nav.innerHTML = En_NavTemplate;
     Main_Footer[0].innerHTML = En_FooterTemplate;
+    // Main_Footer[0].style.direction = "ltr";
     Ar_Nav.classList.add("D_None");
     En_Nav.classList.remove("D_None");
 }

@@ -24,7 +24,7 @@ to = "https://www.youtube.com/"
 status = 200
 
 [[redirects]]
-from = "/HTML/Permanent_Exhibition"
+from = "/HTML/Previous_Presidents"
 to = "https://www.youtube.com/"
 status = 200
 

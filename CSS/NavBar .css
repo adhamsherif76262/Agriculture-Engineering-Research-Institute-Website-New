@@ -8,6 +8,87 @@
     src: url(../Fonts/Arial\ Black.ttf);
 }
 
+.cube-container {
+    /* perspective: 1000px; */
+    /* Set perspective to create the 3D effect */
+    overflow: hidden !important;
+}
+
+.cube {
+    width: 250px;
+    /*Updatedwidth*/
+    height: 150px;
+    /*Updatedheight*/
+    position: relative;
+    transform-style: preserve-3d;
+    /*Preserve3Dtransformations*/
+    transform: rotateY(0deg);
+    /*Initialposition*/
+    animation: rotateY 10s infinite linear;
+}
+
+.cube .face {
+    position: absolute;
+    width: 250px;
+    /* Updated width */
+    height: 150px;
+    /* Updated height */
+    /* background-color: #fff;
+    border: 2px solid #ddd; */
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    /* Hide the back side of faces */
+}
+
+.cube img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Positioning the faces */
+.cube .front {
+    transform: rotateY(0deg) translateZ(125px);
+    /* Positioned forward */
+}
+
+.cube .back {
+    transform: rotateY(180deg) translateZ(125px);
+    /* Positioned backward */
+}
+
+.cube .right {
+    transform: rotateY(90deg) translateZ(125px);
+
+}
+
+.cube .left {
+    transform: rotateY(-90deg) translateZ(125px);
+    /* Positioned to the left */
+}
+
+/* Y-axis rotation animation */
+@keyframes rotateY {
+    from {
+        transform: rotateY(0deg);
+        /* Start rotation */
+    }
+
+    to {
+        transform: rotateY(360deg);
+        /* Complete rotation */
+    }
+}
+
+/* Stop animation on hover */
+.cube:hover {
+    animation-play-state: paused;
+    /* Pause the animation when hovered */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -165,6 +246,7 @@
     transition: 0.5s;
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .Nav_Links {
@@ -190,9 +272,10 @@
     transition: 0.5s;
     transform-origin: left;
     background: transparent;
-    /* To Apply the reddish background from the very begining*/
+    /*ToApplythereddishbackgroundfromtheverybegining*/
     transform: scaleX(0);
     z-index: -1;
+    /* font-size: 10px; */
 }
 
 .Nav_Links:before {
@@ -214,7 +297,7 @@
 .Nav_Link_Footer_En:hover:before,
 .Nav_Link_Footer_Ar:hover:before {
     transition: transform 0.5s;
-    transform-origin: left;
+    transform-origin: right;
     transform: scaleX(1);
 }
 
@@ -372,7 +455,7 @@
 
     100% {
         transform: translate(-10px, 0);
-}
+    }
 }
 
 @keyframes navlink_7_Ar {
@@ -574,6 +657,7 @@
     animation: ARC_Logo cubic-bezier(0.77, 0, 0.175, 1) 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    overflow: hidden !important;
 }
 
 .NavBar_Logos {
@@ -583,7 +667,7 @@
     transition: 0.5s;
 }
 
-.NavBar_Logos:hover {
+.cube-container:hover {
     animation: shake 0.1s;
     animation-iteration-count: infinite;
 }
@@ -639,7 +723,7 @@
 
     100% {
         transform: scale(0.8) translate(175px, -30px);
-}
+    }
 }
 
 @keyframes blob-bottom-left-anim_En {
@@ -895,10 +979,21 @@
 }
 
 @media screen and (max-width : 1485px) {
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .cube-container {
+        /* perspective: 1000px; */
+        /* Set perspective to create the 3D effect */
+        overflow: hidden !important;
+    }
+
     #NavBar_P_En {
         font-size: 31px;
         margin-left: 20px;
         margin-right: 20px;
+        /* overflow-x: hidden !important; */
     }
 
     #NavBar_P_Ar {
@@ -1035,42 +1130,6 @@
     .content {
         min-width: -webkit-fill-available;
     }
-
-    /* #Lower_Footer_Ar{
-        
-        min-width: -webkit-fill-available;
-    } */
-    /* .footer{
-        transform: scale(50%);
-    } */
-    /* #Footer_Section {
-        transform: scale(50%);
-        margin: auto !important;
-    } */
-    #Upper_Footer_Left_Ar {
-        transform: scale(60%);
-        margin-left: -70px !important;
-        margin-right: -100px !important;
-        margin-top: -40px !important;
-        margin-bottom: -40px !important;
-        /* margin: 0px !important;
-        padding: 0px !important; */
-    }
-
-    #Footer_P_Ar {
-        transform: scale(50%);
-        margin-right: -150px !important;
-    }
-
-    /* #Footer_Btns_Div,
-    #Footer_P_Ar,
-    #Navigation_Links_Footer_Div,
-    #Upper_Footer_Left_Ar {
-        transform: scale(50%);
-        margin: 0px !important;
-        padding: 0px !important;
-    } */
-
     #Footer_LangBtnAr,
     #LangBtnAr,
     #TopBtnEn {
@@ -1118,10 +1177,29 @@
         transform: scale(70%);
         margin-right: -100px !important;
     } */
+    /* Positioning the faces */
+    .cube .front {
+        transform: rotateY(0deg) translateZ(70px);
+    }
+
+    .cube .back {
+        transform: rotateY(180deg) translateZ(70px);
+        /* Positioned backward */
+    }
+
+    .cube .right {
+        transform: rotateY(90deg) translateZ(70px);
+
+    }
+
+    .cube .left {
+        transform: rotateY(-90deg) translateZ(70px);
+        /* Positioned to the left */
+    }
 
     #Arabic_NavBar,
     #English_NavBar {
-        height: 400px;
+        height: 465px;
     }
 
     #Footer_LangBtnAr,
@@ -1138,7 +1216,7 @@
         padding: 0;
         margin-right: 10px;
         width: 115px;
-        height: 50px;
+        height: 60px;
     }
 
     #NavBar_P_En {
@@ -1262,7 +1340,7 @@
     #TopBtnAr {
         margin-right: 10px;
         width: 100px;
-        height: 50px;
+        height: 60px;
         font-size: 19px;
     }
 
@@ -1272,8 +1350,8 @@
         margin: 0;
         padding: 0;
         margin-right: 10px;
-        width: 70px;
-        height: 50px;
+        width: 100px;
+        height: 60px;
     }
 
     #NavBar_P_Ar {
@@ -1336,6 +1414,7 @@
 }
 
 @media screen and (max-width : 600px) {
+
     .NavBar_Logos {
         transform: scale(60%);
     }
@@ -1344,15 +1423,15 @@
     #LangBtnEn,
     #TopBtnAr {
         width: 90px;
-        height: 50px;
+        height: 60px;
         font-size: small;
     }
 
     #Footer_LangBtnAr,
     #LangBtnAr,
     #TopBtnEn {
-        width: 60px;
-        height: 40px;
+        width: 100px;
+        height: 60px;
         font-size: 17px;
     }
 
@@ -1380,12 +1459,32 @@
 
 @media screen and (max-width : 500px) {
 
+    /* Positioning the faces */
+    .cube .front {
+        transform: rotateY(0deg) translateZ(125px);
+    }
+
+    .cube .back {
+        transform: rotateY(180deg) translateZ(125px);
+        /* Positioned backward */
+    }
+
+    .cube .right {
+        transform: rotateY(90deg) translateZ(125px);
+
+    }
+
+    .cube .left {
+        transform: rotateY(-90deg) translateZ(125px);
+        /* Positioned to the left */
+    }
+
     #English_NavBar {
-        height: 545px;
+        height: 575px;
     }
 
     #Arabic_NavBar {
-        height: 510px;
+        height: 535px;
     }
 
     #Nav_Links_Container_En {
@@ -1459,14 +1558,14 @@
         margin-top: 0px;
     }
 
-    #Footer_LangBtnEn,
+    /* #Footer_LangBtnEn,
     #LangBtnAr,
     #TopBtnAr {
         margin: 0;
         padding: 0;
         width: 80px;
         margin-top: 25px !important;
-    }
+    } */
 
     #Nav_Links_Container_En {
         transition: 0.5s;
@@ -1477,21 +1576,6 @@
 }
 
 @media screen and (max-width : 350px) {
-    #English_NavBar {
-        height: 550px;
-    }
-
-    #Arabic_NavBar {
-        height: 460px;
-    }
-
-    #Footer_LangBtnAr,
-    #LangBtnAr,
-    #TopBtnEn {
-        margin: 0;
-        transform: scaleX(100%);
-        transform: scaleY(70%);
-    }
 
     #Footer_LangBtnEn,
     #LangBtnEn,

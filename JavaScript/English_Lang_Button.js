@@ -55,11 +55,11 @@ function LangBtnEnClick() {
         Institute_Branches_Load_Content_En();
         break;
 
-      case location.href.includes("/Permanent_Exhibition") ||
-        location.href.includes("/permanent_exhibition"):
-        alert("Heloo from Permanent Exhibition ENG");
-        HomePageTitle[0].innerHTML = "AERI Permanent Exhibition Page";
-        Permanent_Exhibition_Load_Content_En();
+      case location.href.includes("/Previous_Presidents") ||
+        location.href.includes("/previous_presidents"):
+        alert("Heloo from Previous Presidents ENG");
+        HomePageTitle[0].innerHTML = "AERI Previous Presidents Page";
+        Previous_Presidents_Load_Content_En();
         break;
 
       case location.href.includes("/Research_Projects") ||

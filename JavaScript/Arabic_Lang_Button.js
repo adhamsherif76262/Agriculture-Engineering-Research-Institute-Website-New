@@ -60,11 +60,11 @@ function LangBtnArClick() {
       Institute_Branches_Load_Content_Ar();
       break;
 
-    case location.href.includes("/Permanent_Exhibition") ||
-      location.href.includes("/permanent_exhibition"):
-      alert("Heloo from Permanent Exhibition AR" + Permanent_Exhibition_Title);
+    case location.href.includes("/Previous_Presidents") ||
+      location.href.includes("/previous_presidents"):
+      alert("Heloo from Previous Presidents AR" + Previous_Presidents_Title);
       HomePageTitle[0].innerHTML = "المعرض الدائم";
-      Permanent_Exhibition_Load_Content_Ar();
+      Previous_Presidents_Load_Content_Ar();
       break;
 
     case location.href.includes("/Research_Projects") ||
