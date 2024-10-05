@@ -107,7 +107,7 @@
 }
 
 .card_Ar>.content_Ar {
-    background: #9efdff;
+    background: #0a2640;
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
     padding: 1em;
@@ -269,7 +269,8 @@
     margin-top: 100px;
 }
 
-#Patent_Header_Ar, #Patent_Header_En{
+#Patent_Header_Ar,
+#Patent_Header_En {
     margin-top: 30px;
 }
 

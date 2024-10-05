@@ -632,7 +632,7 @@ function Patents_Load_Content_En() {
       } else if (browserName.toLowerCase() === "microsoft edge") {
         alert(browserName)
         // Wrapper_En.style.width = "62.9%";
-        Wrapper_En.style.width = "68.9%";
+        Wrapper_En.style.width = "67%";
         alert(Wrapper_En.style.width);
       }
     }

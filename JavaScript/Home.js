@@ -160,7 +160,7 @@ function Home_Load_Content_Ar() {
   Overview_Section.style.direction = "rtl";
   homeH1.textContent = "كلمة مدير المعهد";
   homeH1.style.direction = "rtl";
-  Current_President_H2.textContent = "مدير المعهد"
+  Current_President_H2.textContent = "مدير المعهد الأستاذ الدكتور :  حازم مهاود";
   Current_President_H2.style.direction = "rtl";
   First_P.innerHTML = "تلعب الهندسة الزراعية دورًا حيويًا في تحسين وتطوير الإنتاج الزراعي من خلال تطبيق مبادئ الهندسة والتكنولوجيا في مختلف المجالات الزراعية. <br> وتتمثل مساهمات الهندسة الزراعية في ما يلي  :";
   First_P.style.direction = "rtl";
@@ -178,7 +178,7 @@ function Home_Load_Content_En() {
   Overview_Section.style.direction = "ltr";
   homeH1.textContent = "Director's speech";
   homeH1.style.direction = "ltr";
-  Current_President_H2.textContent = "Institute Director";
+  Current_President_H2.textContent = "Institute Director : Prof. Dr. Hazem Mehawed";
   Current_President_H2.style.direction = "ltr";
   First_P.innerHTML = `Agricultural engineering plays a crucial role in enhancing and advancing agricultural production by applying engineering and technology principles across various agricultural sectors. <br> The contributions of agricultural engineering include the following :`;
   First_P.style.direction = "ltr"

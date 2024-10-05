@@ -163,16 +163,16 @@ const password = Str_Random(100);
     // if ((data && data !== lastValue) || (performance.navigation.type == performance.navigation.TYPE_RELOAD)) {
       switch (window.performance.getEntriesByType("navigation")[0].type) {
         case "navigate":
-          alert("Page Navigated to (First Entry)");
+          console.log("Page Navigated to (First Entry)");
           break;
         case "reload":
-          alert("Page Reloaded");
+          console.log("Page Reloaded");
           break;
         case "back_forward":
-          alert("Page GONE BACKWARD OR FORWARD");
+          console.log("Page GONE BACKWARD OR FORWARD");
           break;
         default :
-          alert("The Page Is Pre-Rendered");
+          console.log("The Page Is Pre-Rendered");
         break;
       }
 

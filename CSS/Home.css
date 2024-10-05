@@ -65,13 +65,10 @@ li+li {
     margin-top: 1rem;
 }
 
-.Objectives_LI:nth-child(4) {
-    margin-left : 175px !important;
-}
-
 .Objectives_LI {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     /* background: rgb(243, 235, 223); */
     /* background: aliceblue; */
@@ -93,7 +90,7 @@ li+li {
     /* background: honeydew; */
     /* background: rgb(243, 235, 223); */
     background: #d5d5d5;
-    margin-right: -2rem;
+    /* margin-left: -2rem; */
 }
 
 .Objectives_LI:nth-child(even)::before {

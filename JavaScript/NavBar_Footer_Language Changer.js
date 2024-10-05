@@ -12,12 +12,12 @@ var HTMLpath = "";
 var IMAGESpath = ".";
 
 if (location.href.includes("/Home") || location.href.includes("/home")){
-  alert(`I${HTMLpath}am${HTMLpath}Home`);
+  // alert(`I${HTMLpath}am${HTMLpath}Home`);
   HTMLpath = "./HTML/";
   IMAGESpath = "";
 }
 else if (location.href.includes("/Departements") || location.href.includes("/departements")){
-  alert(`I ${HTMLpath} am ${location.href}  Departement`);
+  // alert(`I ${HTMLpath} am ${location.href}  Departement`);
   HTMLpath = "../";
   IMAGESpath = "./..";
 }

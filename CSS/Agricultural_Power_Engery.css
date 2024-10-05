@@ -22,6 +22,41 @@ body {
     font-family: Omnes-Arabic-HairLine-Bold;
 }
 
+#Header_Marquee {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 95% !important;
+    margin-left: 2.5% !important;
+    margin-right: 2.5% !important;
+    transition: 1s;
+    height: 100px;
+}
+
+#Inner_Header_Marquee {
+    transition: 1s;
+    z-index: 100;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#Inner_Header_Marquee:hover {
+    transition: 1s;
+    background-color: rgb(0, 0, 119);
+    color: white;
+    cursor: pointer;
+    border: double 15px white;
+    /* border-radius: 50%; */
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#Agricultural_Power_Energy_Span_1,
+#Agricultural_Power_Energy_Span_2,
+#Agricultural_Power_Energy_Span_3 {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    font-size: 40px;
+}
+
 #Agricultural_Power_Energy_H1,
 #Agricultural_Power_Energy_H2 {
     font-size: 50px;
@@ -562,7 +597,8 @@ a:active {
     #Objectives_Section {
         height: 700px;
     }
-    #Achievements_Section{
+
+    #Achievements_Section {
         margin-top: 350px;
     }
 }
@@ -593,13 +629,21 @@ a:active {
         left: 20px;
         top: 10px;
     }
-    #Achievements_Section{
+
+    #Achievements_Section {
         margin-bottom: 150px;
     }
 }
 
 
 @media screen and (max-width : 600px) {
+
+    #Agricultural_Power_Energy_Span_1::after,
+    #Agricultural_Power_Energy_Span_2::after {
+        content: "\a";
+        white-space: pre;
+    }
+
     .Objectives_carousel__cell {
         width: 300px;
         height: 250px;
@@ -684,6 +728,7 @@ a:active {
 }
 
 @media screen and (max-width : 400px) {
+
     #Objectives_Section {
         height: 1100px;
     }

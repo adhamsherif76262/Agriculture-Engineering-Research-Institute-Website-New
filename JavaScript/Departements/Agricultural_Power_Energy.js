@@ -10,6 +10,15 @@ var Agricultural_Power_Energy_H2 = document.getElementById(
 var Research_Fields_Section = document.getElementById(
   "Research_Fields_Section"
 );
+var Agricultural_Power_Energy_Span_1 = document.getElementById(
+  "Agricultural_Power_Energy_Span_1"
+);
+var Agricultural_Power_Energy_Span_2 = document.getElementById(
+  "Agricultural_Power_Energy_Span_2"
+);
+var Agricultural_Power_Energy_Span_3 = document.getElementById(
+  "Agricultural_Power_Energy_Span_3"
+);
 var Objectives_Section = document.getElementById("Objectives_Section");
 var Achievements_Section = document.getElementById("Achievements_Section");
 
@@ -601,6 +610,9 @@ var Achievements_Section_En = `
   }
 
 function Agricultural_Power_Energy_Load_Content_Ar() {
+  Agricultural_Power_Energy_Span_1.textContent = "بحوث";
+  Agricultural_Power_Energy_Span_2.textContent = "القوى و";
+  Agricultural_Power_Energy_Span_3.textContent = "الطاقة";
   Agricultural_Power_Energy_H1.textContent = "الأهداف الرئيسية للقسم";
   HomePageTitle[0].innerHTML = "القوى والطاقة";
   Agricultural_Power_Energy_H2.textContent = "المجالات البحثية للقسم";
@@ -695,6 +707,9 @@ function Agricultural_Power_Energy_Load_Content_Ar() {
   });
 }
 function Agricultural_Power_Energy_Load_Content_En() {
+  Agricultural_Power_Energy_Span_1.textContent = "Agricultural ";
+  Agricultural_Power_Energy_Span_2.textContent = " Power & ";
+  Agricultural_Power_Energy_Span_3.textContent = " Energy ";
   Agricultural_Power_Energy_H1.textContent = "Department Main Objectives";
   HomePageTitle[0].innerHTML = "AERI APE Page";
   Agricultural_Power_Energy_H2.textContent = "Department Research Fields"

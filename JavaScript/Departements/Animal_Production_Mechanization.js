@@ -7,6 +7,8 @@ var Animal_Production_Mechanization_Page_Title = document.getElementById(
 var Footer_Section = document.getElementById("Footer_Section");
 
 var APM_Marquee = document.getElementById("Inner_Header_Marquee");
+var APM_Goals_Section_H2 = document.getElementById("APM_Goals_Section_H2");
+// var APM_Machinery_Section_H2 = document.getElementById("APM_Machinery_Section_H2");
 
 var APM_Marquee_Ar = `
   <h1 id="Animal_Production_Mechanization_H1_Ar">
@@ -56,7 +58,7 @@ var APM_Goals_Section_Ar = `
         </li>
     </ul>
 
-    <button id="btnReload_Ar">Reload</button>
+    <button id="btnReload_Ar">اعادة التحميل</button>
 `;
 
 var APM_Goals_Section_En = `
@@ -135,7 +137,9 @@ var APM_Machinery_Section_En = `
 function Animal_Production_Mechanization_Load_Content_Ar() {
   // Animal_Production_Mechanization_H1.textContent = "ىىىىىىىىىىىىىىىىىىىىىىىىىىىى";
     APM_Marquee.innerHTML = APM_Marquee_Ar;
+    APM_Goals_Section_H2.textContent = "الأهداف الرئيسية و الالات المستخدمة بالقسم";
     APM_Goals_Section.innerHTML = APM_Goals_Section_Ar;
+    // APM_Machinery_Section_H2.textContent = "الالات المستخدمة بالقسم";
     APM_Machinery_Section.innerHTML = APM_Machinery_Section_Ar;
     HomePageTitle[0].innerHTML = "الانتاج الحيوانى والسمكي والداجنى";
     $(".rolldown-list_Ar li").each(function () {
@@ -261,7 +265,9 @@ function Animal_Production_Mechanization_Load_Content_Ar() {
   function Animal_Production_Mechanization_Load_Content_En() {
     // Animal_Production_Mechanization_H1.textContent = "zzzzzzzzzzzzzz";
     APM_Marquee.innerHTML = APM_Marquee_En;
+    APM_Goals_Section_H2.textContent = "The Main Ojectives & The Used Machinery"
     APM_Goals_Section.innerHTML = APM_Goals_Section_En;
+    // APM_Machinery_Section_H2.textContent = "The Used Machinery";
     APM_Machinery_Section.innerHTML = APM_Machinery_Section_En;
     HomePageTitle[0].innerHTML = "AERI APM Page";
     $(".rolldown-list_En li").each(function () {

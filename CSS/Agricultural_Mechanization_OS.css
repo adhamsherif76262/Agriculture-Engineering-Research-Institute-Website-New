@@ -47,6 +47,12 @@
 }
 
 /**MAIN OBJECTIVES SECTION**/
+#Main_Objectives_Section_H2 {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    font-size: 50px;
+    /* margin-top: 100px !important; */
+    text-align: center;
+}
 
 #Main_Objectives_Ar {
     font-family: Omnes-Arabic-HairLine-Bold;
@@ -481,6 +487,13 @@ use {
 
 
 /**Research Fields Section**/
+#Research_Fields_Section_H2 {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    font-size: 50px;
+    margin-top: 100px !important;
+    text-align: center;
+}
+
 #Research_Fields_Section {
     margin-top: 100px;
 }

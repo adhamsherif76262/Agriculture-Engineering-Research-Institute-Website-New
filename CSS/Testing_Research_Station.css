@@ -547,7 +547,7 @@ ul li ul li {
 #UL_En {
     position: relative;
     width: 100%;
-    /* max-height: 230px; */
+    max-height: 370px;
     display: flex;
     flex-direction: column;
     align-items: space-between;
@@ -704,6 +704,7 @@ ul li ul li {
     font-family: Omnes-Arabic-HairLine;
     font-weight: bold;
     font-size: 30px;
+    /* list-style: disc; */
 }
 
 #OL_Ar>li>p {
@@ -730,6 +731,12 @@ ol {
 
 #OL_Ar {
     direction: rtl;
+    width: 100% !important;
+    /* display: none; */
+}
+
+#OL_En {
+    direction: ltr;
     width: 100% !important;
     /* display: none; */
 }
@@ -859,14 +866,20 @@ li::before {
         max-width: 85%;
         /* display: none; */
     }
-}
-
-@media (max-width: 900px) {
 
     #Testing_Reasearch_Station_Span_1,
     #Testing_Reasearch_Station_Span_2,
     #Testing_Reasearch_Station_Span_3 {
         font-size: 30px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    #Testing_Reasearch_Station_Span_1::after,
+    #Testing_Reasearch_Station_Span_2::after {
+        content: "\a";
+        white-space: pre;
     }
 }
 
@@ -941,12 +954,6 @@ li::before {
         display: none;
     }
 
-    #Testing_Reasearch_Station_Span_1::after,
-    #Testing_Reasearch_Station_Span_2::after {
-        content: "\a";
-        white-space: pre;
-    }
-
     .Main_List_Item_P_Ar {
         padding: 0 !important;
         padding-right: 15px !important;
@@ -959,7 +966,8 @@ li::before {
         margin-top: 50px;
     }
 
-    #UL_Ar {
+    #UL_Ar,
+    #UL_En {
         min-height: 300px !important;
         /* display: none; */
     }
@@ -1004,6 +1012,11 @@ li::before {
     #Objectives_En ul:not(ul ul) {
         perspective: 500vw !important;
     }
+
+    .Main_List_Item_H3_En {
+        margin-left: -32px !important;
+        transform: scale(90%);
+    }
 }
 
 
@@ -1016,6 +1029,11 @@ li::before {
     .Main_List_Item:hover {
         margin-top: 150px !important;
         margin-bottom: 150px !important;
+    }
+
+    .Main_List_Item_H3_En {
+        margin-left: -45px !important;
+        transform: scale(80%);
     }
 }
 
@@ -1034,6 +1052,11 @@ li::before {
     .big {
         font-size: 1.6rem;
     }
+
+    .Main_List_Item_H3_En {
+        margin-left: -55px !important;
+        transform: scale(70%);
+    }
 }
 
 @media screen and (max-width : 350px) {
@@ -1048,5 +1071,10 @@ li::before {
         margin-top: 250px !important;
         margin-bottom: 250px !important;
         /* display: none !important; */
+    }
+
+    .Main_List_Item_H3_En {
+        margin-left: -70px !important;
+        transform: scale(60%);
     }
 }

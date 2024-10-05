@@ -12,6 +12,12 @@ var Agricultural_Mechanization_OS_Span_3 = document.getElementById(
 var Agricultural_Mechanization_OS_Span_4 = document.getElementById(
   "Agricultural_Mechanization_OS_Span_4"
 );
+var Main_Objectives_Section_H2 = document.getElementById(
+  "Main_Objectives_Section_H2"
+);
+var Research_Fields_Section_H2 = document.getElementById(
+  "Research_Fields_Section_H2"
+);
 
 var Main_Objectives_Section = document.getElementById(
   "Main_Objectives_Section"
@@ -308,8 +314,10 @@ function Agricultural_Mechanization_OS_Load_Content_Ar() {
     Agricultural_Mechanization_OS_Span_3.textContent = "الزراعية";
     Agricultural_Mechanization_OS_Span_4.textContent = "";
     HomePageTitle[0].innerHTML = "نظم ميكنة العمليات الزراعية";
+    Main_Objectives_Section_H2.textContent = "الأهداف الرئيسية للقسم";
     Main_Objectives_Section.innerHTML = Main_Objectives_Section_Ar;
     Achievements_Section.innerHTML = Achievements_Section_Ar;
+    Research_Fields_Section_H2.textContent = "المجالات البحثية للقسم";
     Research_Fields_Section.innerHTML = Research_Fields_Section_Ar;
 }
 function Agricultural_Mechanization_OS_Load_Content_En() {
@@ -318,8 +326,10 @@ function Agricultural_Mechanization_OS_Load_Content_En() {
     Agricultural_Mechanization_OS_Span_3.textContent = "Operations";
     Agricultural_Mechanization_OS_Span_4.textContent = "Systems";
     HomePageTitle[0].innerHTML = "AERI AMOS Page";
+    Main_Objectives_Section_H2.textContent = "Main Objectives"
     Main_Objectives_Section.innerHTML = Main_Objectives_Section_En;
     Achievements_Section.innerHTML = Achievements_Section_En
+    Research_Fields_Section_H2.textContent = "Research Fileds"
     Research_Fields_Section.innerHTML = Research_Fields_Section_En;
 }
 

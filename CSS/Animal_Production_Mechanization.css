@@ -49,6 +49,21 @@
     font-size: 40px;
 }
 
+#APM_Machinery_Section_H2,
+#APM_Goals_Section_H2 {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px !important;
+}
+
+#APM_Machinery_Section_H2 {
+    /* position: absolute;
+    bottom: -90%;
+    right: 50%; */
+    /* margin-top: -400px !important; */
+}
+
 .rolldown-list_En {
     text-align: left;
     padding: 0;
@@ -164,7 +179,7 @@
 
 #btnReload_En {
     float: right;
-    color: #333;
+    color: black;
     background: #ccc;
     text-transform: uppercase;
     border: none;
@@ -173,7 +188,7 @@
 
 #btnReload_Ar {
     float: left;
-    color: #c40b0b;
+    color: black;
     background: #ccc;
     /* text-transform: uppercase; */
     border: none;
@@ -181,11 +196,15 @@
 }
 
 #btnReload_En:hover {
-    background: #ddd;
+    background: black;
+    color: white;
+    cursor: pointer;
 }
 
 #btnReload_Ar:hover {
-    background: #1b37a8;
+    background: black;
+    color: white;
+    cursor: pointer;
 }
 
 @keyframes rolldown {

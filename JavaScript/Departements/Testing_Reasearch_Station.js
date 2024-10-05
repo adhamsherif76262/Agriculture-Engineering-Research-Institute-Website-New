@@ -127,12 +127,11 @@ var TRS_TimeLine_Section_Ar = `
     <div class="Content_Ar">
       <h2>١٩٩٠</h2>
       <div class = "TimeLine_Text_Ar">
-      <ul class = "TimeLine_UL">
-        <li>تم تجديد المحطة بإنشاء معمل الاختبارات</li>
-        <li>تجديد الطريق الخرساني.</li>
-        <li>تجديد المبنى الرئيسي ”الإداري“.</li>
-      </ul>
-
+        <ul class = "TimeLine_UL">
+          <li>تم تجديد المحطة بإنشاء معمل الاختبارات</li>
+          <li>تجديد الطريق الخرساني.</li>
+          <li>تجديد المبنى الرئيسي ”الإداري“.</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -142,47 +141,38 @@ var TRS_TimeLine_Section_En = `
 <div class="timeline">
   <div class="container left">
     <div class="Content_En">
-      <h2>2017</h2>
-      <p>
-        Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum
-        perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret
-        expetendis his, te elit voluptua dignissim per, habeo iusto primis ea
-        eam.
+      <h2>August 14, 1963: </h2>
+      <p class = "TimeLine_Text_Ar">
+        The Agricultural Machinery, Tractor Testing and Research Station was inaugurated in cooperation with the Food and Agriculture Organization of the United Nations (one of seven stations in the world).
       </p>
     </div>
   </div>
   <div class="container right">
     <div class="Content_En">
-      <h2>2016</h2>
-      <p>
-        Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum
-        perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret
-        expetendis his, te elit voluptua dignissim per, habeo iusto primis ea
-        eam.
+      <h2>1963 - 1990: </h2>
+      <p class = "TimeLine_Text_Ar">
+        The Agricultural Mechanization Research Institute was established, making the station the nucleus of the institute.
       </p>
     </div>
   </div>
   <div class="container left">
     <div class="Content_En">
-      <h2>2015</h2>
-      <p>
-        Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum
-        perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret
-        expetendis his, te elit voluptua dignissim per, habeo iusto primis ea
-        eam.
+      <h2>1985: </h2>
+      <p class = "TimeLine_Text_Ar">
+        The name was changed to the Agricultural Engineering Research Institute, and the station became one of the key pillars of the national agricultural mechanization project.
       </p>
     </div>
   </div>
   <div class="container right">
     <div class="Content_En">
-      <h2>2012</h2>
-      <p>
-        Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum
-        perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret
-        expetendis his, te elit voluptua dignissim per, habeo iusto primis ea
-        eam.
-      </p>
-      <ul class = "TimeLine_UL"></ul>
+      <h2>1990:</h2>
+      <div class = "TimeLine_Text_Ar">
+        <ul class = "TimeLine_UL">
+          <li>The station was renovated, including the establishment of a testing laboratory.</li>
+          <li>Renovation of the concrete road.</li>
+          <li>Renovation of the main administrative building.</li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>;
@@ -249,29 +239,42 @@ var TRS_Projects_Section_Ar = `
 var TRS_Projects_Section_En = `
     <ol style="--length: 5" role="list" id="OL_En">
         <li style="--i: 1" class="Main_List_Item">
-            <h3 class = "Main_List_Item_H3_En">Discovery and assessment</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus.</p>
+            <h3 class = "Main_List_Item_H3_En">Library</h3>
+            <ul class="Inner_List Inner_List_Ar">
+                <li class="Inner_List_Item">•	The library contains over 400 books in the field of agricultural engineering and related areas.</li>
+                <li class="Inner_List_Item">•	It accommodates about 10 individuals at the same time.</li>
+                <li class="Inner_List_Item">•	It contains copies of master's and doctoral theses of employees at the station.</li>
+            </ul>
         </li>
         <li style="--i: 2" class="Main_List_Item">
-            <h3 class = "Main_List_Item_H3_En">Information gathering and analysis</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus.</p>
+            <h3 class = "Main_List_Item_H3_En">Testing Laboratory Equipment</h3>
+            <ul class="Inner_List Inner_List_Ar">
+                <li class="Inner_List_Item">•	2 tractors (100, 120 horsepower).</li>
+                <li class="Inner_List_Item">•	3 dynamometers for measuring PTO power.</li>
+                <li class="Inner_List_Item">•	1 electronic dynamometer (10 tons).</li>
+                <li class="Inner_List_Item">•	2 hydraulic dynamometers.</li>
+                <li class="Inner_List_Item">•	Manual fuel measurement device.</li>
+                <li class="Inner_List_Item">•	Electronic fuel measurement device.</li>
+                <li class="Inner_List_Item">•	Computer.</li>
+                <li class="Inner_List_Item">•	Devices for measuring losses in threshing and harvesting machines.</li>
+            </ul>
         </li>
         <li style="--i: 3" class="Main_List_Item">
-            <h3 class = "Main_List_Item_H3_En">Creating your claim</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus.</p>
+            <h3 class = "Main_List_Item_H3_En">Laser Leveling Equipment Repair and Maintenance Laboratory</h3>
+            <p class = "Main_List_Item_P_Ar">The Laser Leveling Equipment Laboratory is the only laboratory in the Republic responsible for the maintenance of all types of laser leveling devices and for calibrating these devices. The staff of the laboratory is academically and practically qualified to conduct research related to leveling operations using laser devices.</p>
+            <ul class="Inner_List Inner_List_Ar">
+                <li class="Inner_List_Item">•	Sending device calibration unit.</li>
+                <li class="Inner_List_Item">•	Hydraulic calibration unit.</li>
+                <li class="Inner_List_Item">•	Repair assistance.</li>
+            </ul>
         </li>
         <li style="--i: 4" class="Main_List_Item">
-            <h3 class = "Main_List_Item_H3_En">Approvals and submission</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus.</p>
+            <h3 class = "Main_List_Item_H3_En">Pump Testing Laboratory</h3>
+            <p class = "Main_List_Item_P_Ar">The field pump testing laboratory is accredited by the Egyptian Ministry of Agriculture to test and evaluate all types of field pumps. The laboratory includes a qualified team and capabilities that enable it to carry out its mission.</p>
         </li>
         <li style="--i: 5" class="Main_List_Item">
-            <h3 class = "Main_List_Item_H3_En">Receiving your benefit</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus.</p>
+            <h3 class = "Main_List_Item_H3_En">Renewable Energy Laboratory</h3>
+            <p class = "Main_List_Item_P_Ar">The new and renewable energy laboratory conducts research related to solar energy applications, wind energy, and energy extracted from biogas in agriculture. The laboratory also plays a guiding role in disseminating various applications.</p>
         </li>
     </ol>
 `;
@@ -334,68 +337,36 @@ var TRS_Services_Section_En = `
             </p>
         </div>
 
-        <h1 id = "H1_En">List of CSS3 properties</h1>
+        <h1 id = "H1_En">Services</h1>
 
         <ul id = "UL_En">
-            <li class="Li_En">align-content
-                align-contentalign-contentalign-contentalign-contentalign-contentalign-contentalign-contentalign-contentalign-contentalign-contentalign-contentalign-contentalign-contentalign-contentalign-contentalign-contentalign-contentalign-contentalign-content
-            </li>
-            <li class="Li_En" >align-self</li>
-            <li class="Li_En" >animation</li>
-            <li class="Li_En" >animation-delay</li>
-            <li class="Li_En" >animation-direction</li>
-            <li class="Li_En" >animation-duration</li>
-            <li class="Li_En" >animation-fill-mode</li>
-            <li class="Li_En" >animation-iteration-count</li>
-            <li class="Li_En" >animation-name</li>
-            <li class="Li_En" >animation-play-state</li>
-            <li class="Li_En" >animation-timing-function</li>
-            <li class="Li_En" >backface-visibility</li>
-            <li class="Li_En" >background</li>
-            <li class="Li_En" >background-attachment</li>
-            <li class="Li_En" >background-blend-mode</li>
-            <li class="Li_En" >background-clip</li>
-            <li class="Li_En" >background-color</li>
-            <li class="Li_En" >background-image</li>
-            <li class="Li_En" >background-origin</li>
-            <li class="Li_En" >background-position</li>
-            <li class="Li_En" >background-repeat</li>
-            <li class="Li_En" >background-size</li>
-            <li class="Li_En" >block-size</li>
-            <li class="Li_En" >border</li>
-            <li class="Li_En" >border-block</li>
-            <li class="Li_En" >border-block-color</li>
-            <li class="Li_En" >border-block-end</li>
-            <li class="Li_En" >border-block-end-color</li>
-            <li class="Li_En" >border-block-end-style</li>
-            <li class="Li_En" >border-block-end-width</li>
-            <li class="Li_En" >border-block-start</li>
-            <li class="Li_En" >border-block-start-color</li>
-            <li class="Li_En" >border-block-start-style</li>
-            <li class="Li_En" >border-block-start-width</li>
-            <li class="Li_En" >border-block-style</li>
-            <li class="Li_En" >border-block-width</li>
-            <li class="Li_En" >border-bottom</li>
-            <li class="Li_En" >border-bottom-color</li>
-            <li class="Li_En" >border-bottom-left-radius</li>
-            <li class="Li_En" >border-bottom-right-radius</li>
-            <li class="Li_En" >border-bottom-style</li>
-            <li class="Li_En" >border-bottom-width</li>
-            <li class="Li_En" >border-collapse</li>
-            <li class="Li_En" >border-color</li>
-            <li class="Li_En" >border-end-end-radius</li>
-            <li class="Li_En" >border-end-start-radius</li>
-            <li class="Li_En" >border-image</li>
-            <li class="Li_En" >border-image-outset</li>
-            <li class="Li_En" >border-image-repeat</li>
-            <li class="Li_En" >border-image-slice</li>
-            <li class="Li_En" >border-image-source</li>
-            <li class="Li_En" >border-image-width</li>
-            <li class="Li_En" >border-inline</li>
-            <li class="Li_En" >border-inline-color</li>
-            <li class="Li_En" >border-inline-end</li>
-            <li class="Li_En" >border-inline-end-color</li>
-            <li class="Li_En" >border-inline-end-style</li>
+            <li class="Li_En">Laboratory testing of field irrigation pumps.</li>
+            <li class="Li_En">Testing tractor performance on the Power Take-Off (PTO) according to OECD standards.</li>
+            <li class="Li_En">Testing tractor performance on the drawbar according to OECD standards.</li>
+            <li class="Li_En">Testing the hydraulic lifting capacity of the tractor according to OECD standards.</li>
+            <li class="Li_En">Field tests for tractors under Egyptian conditions (soil, climate, operation).</li>
+            <li class="Li_En">Performance testing for all types of agricultural machinery and equipment under Egyptian conditions (soil, climate, operation).</li>
+            <li class="Li_En">Testing irrigation hoses.</li>
+            <li class="Li_En">Testing all types of spraying machines.</li>
+            <li class="Li_En">Designing and manufacturing biofuel production units from agricultural waste and oils.</li>
+            <li class="Li_En">Designing and implementing irrigation networks in green spaces.</li>
+            <li class="Li_En">Designing and implementing various irrigation networks.</li>
+            <li class="Li_En">Installing laser devices for land leveling.</li>
+            <li class="Li_En">Maintenance and repair of agricultural equipment.</li>
+            <li class="Li_En">Maintenance, installation, and design of measurement devices used in testing and agricultural research.</li>
+            <li class="Li_En">Establishing technical specifications for measurement devices in the field of agricultural testing and research.</li>
+            <li class="Li_En">Maintenance and calibration of laser leveling devices.</li>
+            <li class="Li_En">Collaborating with the private sector using workshop capabilities.</li>
+            <li class="Li_En">Training engineers from private and regional universities.</li>
+            <li class="Li_En">Conducting joint research with various entities.</li>
+            <li class="Li_En">Performing statistical and mathematical analyses and writing various technical reports.</li>
+            <li class="Li_En">Testing threshing and harvesting machines of all types.</li>
+            <li class="Li_En">Providing technical consultations in the tractor and agricultural machinery industry and their suitability for Egyptian conditions.</li>
+            <li class="Li_En">Creating prototypes of agricultural machines and equipment.</li>
+            <li class="Li_En">Manufacturing for others (the private sector).</li>
+            <li class="Li_En">Designing and manufacturing biogas production units from agricultural waste.</li>
+            <li class="Li_En">Field testing of irrigation pump performance.</li>
+            <li class="Li_En">Providing technical consultations in the management of tractors and agricultural machinery for large and medium farms.</li>
         </ul>
 
     </div>
