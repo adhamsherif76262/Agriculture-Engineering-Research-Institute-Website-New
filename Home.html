@@ -89,17 +89,17 @@
      var Hel = "ZZZZZZZZZZZZZZZZZZZZZZZ";
 </script>
 <script>
-    alert(`The Password Is :: \t\n\n ${password}`)
+    console.log(`The Password Is :: \t\n\n ${password}`)
     // console.log(Bubbles)
     // localStorage.clear()
     // localStorage.setItem("Permenant_Language", "HALAAAA");
     if (!(location.href.includes("/Home") || location.href.includes("/home"))){
-        // alert("The Page URL Before Modifications  " + location.href)
+        // console.log("The Page URL Before Modifications  " + location.href)
         location.href += "/Home";
-        // alert("The Page URL After Modifications  " + location.href)
+        // console.log("The Page URL After Modifications  " + location.href)
     }
     else{
-        // alert("The URL Is On Home Page")
+        // console.log("The URL Is On Home Page")
     }
     console.log("Lang From Home :: " + localStorage.getItem("Permenant_Language"));
     if(
@@ -126,7 +126,7 @@
             NavIsAR();
           } else {
             localStorage.setItem("Permenant_Language", "English");
-            alert("Lang From Home After Conversion :: " + localStorage.getItem("Permenant_Language"));
+            console.log("Lang From Home After Conversion :: " + localStorage.getItem("Permenant_Language"));
             // sessionStorage.setItem("Permenant_Language", "English");
             // Permenant_Language = "English";
             NavIsEn();
