@@ -145,20 +145,20 @@ var External_Collaborations_Section_En = `
   </div>
 `;
 function Contact_Load_Content_Ar() {
-  Internal_Collaborations_Section_H2.textContent = "التعاونات الداخلية";
-  HomePageTitle[0].innerHTML = "التعاونات الداخلية و الخارجية";
+  Internal_Collaborations_Section_H2.textContent = "التعاون المحلي ";
+  HomePageTitle[0].innerHTML = "التعاون المحلي والدولي";
   Internal_Collaborations_Section.innerHTML = Internal_Collaborations_Section_Ar;
   Internal_Collaborations_Section.style.direction = "rtl"
-  External_Collaborations_Section_H2.textContent = "التعاونات الخارجية";
+  External_Collaborations_Section_H2.textContent = "التعاون الدولي";
   External_Collaborations_Section.innerHTML = External_Collaborations_Section_Ar;
   External_Collaborations_Section.style.direction = "rtl"
 }
 function Contact_Load_Content_En() {
-  Internal_Collaborations_Section_H2.textContent = "Internal Collaborations"
+  Internal_Collaborations_Section_H2.textContent = "National Collaborations"
   HomePageTitle[0].innerHTML = "AERI Collaborations Page";
   Internal_Collaborations_Section.innerHTML = Internal_Collaborations_Section_En;
   Internal_Collaborations_Section.style.direction = "ltr"
-  External_Collaborations_Section_H2.textContent = "External Collaborations";
+  External_Collaborations_Section_H2.textContent = "International Collaborations";
   External_Collaborations_Section.innerHTML = External_Collaborations_Section_En;
   External_Collaborations_Section.style.direction = "ltr"
 }

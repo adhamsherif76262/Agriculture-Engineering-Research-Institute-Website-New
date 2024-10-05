@@ -188,7 +188,7 @@ var Ar_NavTemplate = `
           <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./${HTMLpath}Previous_Presidents.html">المديرين السابقين</a>
           <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./${HTMLpath}Research_Projects.html">مشاريع بحثية</a>
           <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./${HTMLpath}Overview.html">نبذة</a>
-          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./${HTMLpath}Collaborations.html">التعاونات</a>
+          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./${HTMLpath}Collaborations.html">التعاون</a>
       </div>
     </div>
   </div>
@@ -215,7 +215,7 @@ var En_NavTemplate = `
     </div>
 </a>
 
-<p id="NavBar_P_En">Agriculture Engineering Research Institute</p>
+<p id="NavBar_P_En">Agricultural Engineering Research Institute</p>
 ${LangBtnAr}
 </div>
 <div id="navbar">
@@ -224,7 +224,7 @@ ${LangBtnAr}
                 <a onmouseover="Mouse_Over(this); Mouse_Over_Special(this);" onmouseout="Mouse_Leave(this); Mouse_Leave_Special(this);" class="Nav_Links Nav_Links_En" href="./${HTMLpath}Collaborations.html">Collaborations</a>
                 <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./${HTMLpath}Overview.html">Overview</a>
                 <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./${HTMLpath}Research_Projects.html">Research Projects</a>
-                <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./${HTMLpath}Previous_Presidents.html">Previous Presidents</a>
+                <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./${HTMLpath}Previous_Presidents.html">Previous Directors</a>
                 <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./${HTMLpath}Patents.html">Technological Applications</a>
                 <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./${HTMLpath}Institute_Branches.html">Institute Branches</a>
                 <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./${HTMLpath}Helping_Units.html">Helping Units</a>

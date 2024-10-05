@@ -50,7 +50,6 @@ var Current_President_Section_Ar = `
                     الهندسة الزراعية تُساهم في تصميم وبناء وتطوير الآلات والمعدات المستخدمة في الزراعة مثل الجرارات
                     والحصادات وأنظمة الري، مما يسهم في تقليل الجهد البشري وزيادة كفاءة الإنتاج
                 </p>
-                <button type="button">اقرأ  المزيد</button>
             </li>
             <li>
                 <h2>٢</h2>
@@ -59,7 +58,6 @@ var Current_President_Section_Ar = `
                     الهندسة الزراعية تركز على تطوير وتصميم أنظمة ري فعّالة ومستدامة تساعد في تحسين استخدام المياه وتقليل
                     الفاقد، مما يعزز الإنتاجية ويقلل من تكاليف الزراعة.
                 </p>
-                <button type="button">اقرأ  المزيد</button>
             </li>
             <li>
                 <h2>٣</h2>
@@ -68,7 +66,6 @@ var Current_President_Section_Ar = `
                     من خلال الهندسة الزراعية، يتم الحفاظ على التربة والمياه عبر تطوير تقنيات مكافحة التآكل وتحسين جودة
                     التربة، مما يساعد في الحفاظ على الموارد الطبيعية الأساسية.
                 </p>
-                <button type="button">اقرأ  المزيد</button>
             </li>
             <li>
                 <h2>٤</h2>
@@ -77,7 +74,6 @@ var Current_President_Section_Ar = `
                     الهندسة الزراعية تستفيد من تقنيات متقدمة مثل الاستشعار عن بعد والطائرات بدون طيار ونظم المعلومات
                     الجغرافية (GIS) لتحسين مراقبة المحاصيل وتقييم الظروف البيئية بدقة.
                 </p>
-                <button type="button">اقرأ  المزيد</button>
             </li>
             <li>
                 <h2>٥</h2>
@@ -86,7 +82,6 @@ var Current_President_Section_Ar = `
                     تساعد الهندسة الزراعية على تحسين عمليات الإنتاج من خلال الأتمتة والتحكم في المناخ داخل البيوت
                     البلاستيكية والدفيئات، مما يزيد من الإنتاجية ويقلل من التكاليف.
                 </p>
-                <button type="button">اقرأ  المزيد</button>
             </li>
             <li>
                 <h2>٦</h2>
@@ -95,7 +90,6 @@ var Current_President_Section_Ar = `
                     الهندسة الزراعية تساهم في تصميم وتطوير الهياكل المستخدمة في الزراعة، مثل البيوت البلاستيكية، مرافق
                     التخزين، والمختبرات البحثية، مما يدعم العمليات الزراعية ويعزز من إنتاجيتها.
                 </p>
-                <button type="button">اقرأ  المزيد</button>
             </li>
         </ul>
     </section>
@@ -111,7 +105,6 @@ var Current_President_Section_En = `
                     equipment used in agriculture, such as tractors, harvesters, and irrigation systems, which help
                     reduce human effort and increase production efficiency.
                 </p>
-                <button type="button">Read more</button>
             </li>
             <li>
                 <h2>02</h2>
@@ -121,7 +114,6 @@ var Current_President_Section_En = `
                     systems that improve water use and minimize waste, thereby enhancing productivity and reducing
                     agricultural costs.
                 </p>
-                <button type="button">Read more</button>
             </li>
             <li>
                 <h2>03</h2>
@@ -130,7 +122,6 @@ var Current_President_Section_En = `
                     Through agricultural engineering, soil and water conservation is achieved by developing erosion
                     control techniques and improving soil quality, which helps maintain essential natural resources.
                 </p>
-                <button type="button">Read more</button>
             </li>
             <li>
                 <h2>04</h2>
@@ -140,7 +131,6 @@ var Current_President_Section_En = `
                     geographic information systems (GIS) to improve crop monitoring and accurately assess environmental
                     conditions.
                 </p>
-                <button type="button">Read more</button>
             </li>
             <li>
                 <h2>05</h2>
@@ -149,7 +139,6 @@ var Current_President_Section_En = `
                     Agricultural engineering improves production processes through automation and climate control within
                     greenhouses, leading to increased productivity and reduced costs.
                 </p>
-                <button type="button">Read more</button>
             </li>
             <li>
                 <h2>06</h2>
@@ -159,7 +148,6 @@ var Current_President_Section_En = `
                     agriculture, such as greenhouses, storage facilities, and research laboratories, supporting and
                     enhancing agricultural operations.
                 </p>
-                <button type="button">Read more</button>
             </li>
         </ul>
     </section>

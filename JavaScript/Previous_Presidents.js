@@ -14,56 +14,56 @@ var PP_TimeLine_Section_Ar = `
           <div class="Content_Ar">
               <h2>من فبراير ١٩٨٣ إلى يوليو ١٩٩٤</h2>
               <h2>الأستاذ الدكتور أحمد فريد الصهريجي</h2>
-              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_1_Final.jpeg" target="_blank"
-                  style="--img: url('../../../../Downloads/PP_1_Final-removebg-preview.png');"></a>
+              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_1_Final-removebg-preview_enhanced.png" target="_blank"
+                  style="--img: url('../Images/Previous Presidents/PP_1_Final-removebg-preview_enhanced.png');"></a>
           </div>
       </div>
       <div class="container right">
           <div class="Content_Ar">
               <h2>من ١٩٩٤ إلى يوليو ١٩٩٧</h2>
               <h2>الأستاذ الدكتور عبد الغني الجندي</h2>
-              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_2_Final.jpeg" target="_blank"
-                  style="--img: url('../Images/Previous Presidents/PP_2_Final_New.png');"></a>
+              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_2_Final-removebg-preview_enhanced.png" target="_blank"
+                  style="--img: url('../Images/Previous Presidents/PP_2_Final-removebg-preview_enhanced.png');"></a>
           </div>
       </div>
       <div class="container left">
           <div class="Content_Ar">
               <h2>من يوليو ١٩٩٧ إلى مايو ٢٠٠٥</h2>
               <h2>الأستاذ الدكتور عزمي محمود البري</h2>
-              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_3_Final.jpeg" target="_blank"
-                  style="--img: url('../Images/Previous Presidents/PP_3_Final_New.png');"></a>
+              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_3_Final-removebg-preview_enhanced.png" target="_blank"
+                  style="--img: url('../Images/Previous Presidents/PP_3_Final-removebg-preview_enhanced.png');"></a>
           </div>
       </div>
       <div class="container right">
           <div class="Content_Ar">
               <h2>من مايو ٢٠٠٥ إلى مايو ٢٠١٠</h2>
               <h2>أ.د. جمال حسن السعيد</h2>
-              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_4_Final.jpeg" target="_blank"
-                  style="--img: url('../Images/Previous Presidents/PP_4_Final_New.png');"></a>
+              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_4_Final-removebg-preview_enhanced.png" target="_blank"
+                  style="--img: url('../Images/Previous Presidents/PP_4_Final-removebg-preview_enhanced.png');"></a>
           </div>
       </div>
       <div class="container left">
           <div class="Content_Ar">
               <h2>من مايو ٢٠١٠ إلى مايو ٢٠١١</h2>
-              <h2>بروفيسور دكتور حسن البنا عثمان</h2>
-              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_5_Final.jpeg" target="_blank"
-                  style="--img: url('../Images/Previous Presidents/PP_5_Final_New.png');"></a>
+              <h2> الأستاذ الدكتور حسن البنا عثمان</h2>
+              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_5_Final-removebg-preview_enhanced.png" target="_blank"
+                  style="--img: url('../Images/Previous Presidents/PP_5_Final-removebg-preview_enhanced.png');"></a>
           </div>
       </div>
       <div class="container right">
           <div class="Content_Ar">
               <h2>من مايو ٢٠١١ إلى يناير ٢٠١٩</h2>
               <h2>الأستاذ الدكتور عصام الدين واصف</h2>
-              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_6_Final.jpeg" target="_blank"
-                  style="--img: url('../Images/Previous Presidents/PP_6_Final_New.png');"></a>
+              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_6_Final-removebg-preview_enhanced.png" target="_blank"
+                  style="--img: url('../Images/Previous Presidents/PP_6_Final-removebg-preview_enhanced.png');"></a>
           </div>
       </div>
       <div class="container left">
           <div class="Content_Ar">
               <h2>من يناير ٢٠١٩ إلى أبريل ٢٠٢١</h2>
-              <h2>بروفيسور دكتور محمد مصطفى الخولي</h2>
-              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_7_Final.jpeg" target="_blank"
-                  style="--img: url('../Images/Previous Presidents/PP_7_Final_New.png');"></a>
+              <h2> الأستاذ الدكتور محمد مصطفى الخولي</h2>
+              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_7_Final-removebg-preview_enhanced.png" target="_blank"
+                  style="--img: url('../Images/Previous Presidents/PP_7_Final-removebg-preview_enhanced.png');"></a>
           </div>
       </div>
   </div>;
@@ -74,56 +74,56 @@ var PP_TimeLine_Section_En = `
           <div class="Content_En">
               <h2>From February 1983 To July 1994</h2>
               <h2>Prof. Dr. Ahmed Farid El-Sahrigi</h2>
-              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_1_Final.jpeg" target="_blank"
-              style="--img: url('../Images/Previous Presidents/PP_1_Final.jpeg');"></a>
+              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_1_Final-removebg-preview_enhanced.png" target="_blank"
+              style="--img: url('../Images/Previous Presidents/PP_1_Final-removebg-preview_enhanced.png');"></a>
           </div>
       </div>
       <div class="container right">
           <div class="Content_En">
               <h2>From 1994 To July 1997</h2>
               <h2>Prof. Dr. Abd El-Ghany El-Gendi</h2>
-              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_2_Final.jpeg" target="_blank"
-              style="--img: url('../Images/Previous Presidents/PP_2_Final.jpeg');"></a>
+              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_2_Final-removebg-preview_enhanced.png" target="_blank"
+              style="--img: url('../Images/Previous Presidents/PP_2_Final-removebg-preview_enhanced.png');"></a>
           </div>
       </div>
       <div class="container left">
           <div class="Content_En">
               <h2>From July 1997 To May 2005</h2>
               <h2>Prof. Dr. Azmy Mahmoud El-Berri</h2>
-              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_3_Final.jpeg" target="_blank"
-                  style="--img: url('../Images/Previous Presidents/PP_3_Final.jpeg');"></a>
+              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_3_Final-removebg-preview_enhanced.png" target="_blank"
+                  style="--img: url('../Images/Previous Presidents/PP_3_Final-removebg-preview_enhanced.png');"></a>
           </div>
       </div>
       <div class="container right">
           <div class="Content_En">
               <h2>From May 2005 To May 2010</h2>
               <h2>Prof. Dr. Gamal Hassan El-Said</h2>
-              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_4_Final.jpeg" target="_blank"
-                  style="--img: url('../Images/Previous Presidents/PP_4_Final.jpeg');"></a>
+              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_4_Final-removebg-preview_enhanced.png" target="_blank"
+                  style="--img: url('../Images/Previous Presidents/PP_4_Final-removebg-preview_enhanced.png');"></a>
           </div>
       </div>
       <div class="container left">
           <div class="Content_En">
               <h2>From May 2010 To May 2011</h2>
               <h2>Prof. Dr. Hassan El-Banna Osman</h2>
-              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_5_Final.jpeg" target="_blank"
-                  style="--img: url('../Images/Previous Presidents/PP_5_Final.jpeg');"></a>
+              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_5_Final-removebg-preview_enhanced.png" target="_blank"
+                  style="--img: url('../Images/Previous Presidents/PP_5_Final-removebg-preview_enhanced.png');"></a>
           </div>
       </div>
       <div class="container right">
           <div class="Content_En">
               <h2>From May 2011 To January 2019</h2>
               <h2>Prof. Dr. Essam El-Dein Wassef</h2>
-              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_6_Final.jpeg" target="_blank"
-                  style="--img: url('../Images/Previous Presidents/PP_6_Final.jpeg');"></a>
+              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_6_Final-removebg-preview_enhanced.png" target="_blank"
+                  style="--img: url('../Images/Previous Presidents/PP_6_Final-removebg-preview_enhanced.png');"></a>
           </div>
       </div>
       <div class="container left">
           <div class="Content_En">
               <h2>From January 2019 To April 2021</h2>
               <h2>Prof. Dr. Mohamed Mostafa El-kholli</h2>
-              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_7_Final.jpeg" target="_blank"
-                  style="--img: url('../Images/Previous Presidents/PP_7_Final.jpeg');"></a>
+              <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_7_Final-removebg-preview_enhanced.png" target="_blank"
+                  style="--img: url('../Images/Previous Presidents/PP_7_Final-removebg-preview_enhanced.png');"></a>
           </div>
       </div>
   </div>;

@@ -567,7 +567,7 @@ function Handling_Processing_D_Load_Content_Ar() {
       " تطوير وتقييم مقطوره مبتكره للحبوب بنظام النقل الهوائي";
     Item_3_H1.textContent = "التثبيت الحراري والتخزين الأمن لرجيع الأرز";
     Item_4_H1.textContent =
-      "انتاج البيوشارمن المخلفات الزراعية ومخلفات النخيل";
+      "انتاج البيوشار من المخلفات الزراعية ومخلفات النخيل";
     Item_5_H1.textContent =
       "الحفاظ علي جودة ما بعد الحصاد واطالة عمر تخزين الطماطم (الطازجة والمجففة)";
     Item_6_H1.textContent =
@@ -594,13 +594,13 @@ function Handling_Processing_D_Load_Content_Ar() {
     Activities_Section.innerHTML = Activities_Section_Ar;
 
     Research_Fields_Span_1.textContent =
-      "ستخدام تطبيقات النانوتكنولوجى فى هنسة التصنيع والتداول";
+      "استخدام تطبيقات النانوتكنولوجى فى هنسة التصنيع والتداول";
     Research_Fields_Span_2.textContent = "عمليات تجفيف  المنتجات الزراعية ";
     Research_Fields_Span_3.textContent = "عمليات تخزين وحفظ المنتجات الزراعية ";
     Research_Fields_Span_4.textContent =
       "عمليات الفرز والتدريج والغسيل والتشميع والتعبئة للمحاصيل الزراعية ";
     Research_Fields_Span_5.textContent =
-      "عمليات والتقشير والطحن والخلط للمحاصيل الزراعية ";
+      "عمليات التقشير والطحن والخلط للمحاصيل الزراعية ";
     Research_Fields_Span_6.textContent =
       "عمليات التعبئة والتغليف والنقل للمنتجات الزراعية ";
     Research_Fields_Span_7.textContent =

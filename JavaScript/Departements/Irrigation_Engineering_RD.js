@@ -38,7 +38,7 @@ var IRR_Main_Section_Ar = `
             <li>
                 <img src="../../Images/IRR_4.png" alt="" class="One_Image_4 Img">
                 <span id="IRR_Span_4" style="margin-top: -100px;">وضع أنسب التصميمات التشغيلية والهيدروليكية لشبكات
-                    الرىالحقلى ووضع المعايير القياسية الثابتة
+                    الرى الحقلى ووضع المعايير القياسية الثابتة
                     لتشغيل نظم الرى الحقلى.</span>
             </li>
             <li>
@@ -82,10 +82,10 @@ var IRR_Main_Section_Ar = `
 var IRR_Main_Section_En = `
     <div class="wrapper_En">
         <h2 style = "font-size : 35px;margin-bottom : 50px;margin-top : 25px;">Research and Engineering Personnel Composition in the Department</h2>
-        <p style = "font-size : 25px;margin-top : 50px;margin-bottom : 50px">The department includes 60 staff members at different levels (Head of Research – Senior Researcher –
-            Researcher – Assistant Researcher – Full-time Head of Research), as well as 16 general staff members in
+        <p style = "font-size : 25px;margin-top : 50px;margin-bottom : 50px">The department includes 60 staff members at different levels (Chief Researcher – Senior Researcher –
+            Researcher – Assistant Researcher – Emeritus Chief Researcher), as well as 16 Employees in
             addition to one temporary female engineer.</p>
-        <h1 id="Irrigation_Engineering_RD_H1" style = "font-size : 35px ;margin-bottom : 50px">Activities & Achievements Of The Department</h1>
+        <h1 id="Irrigation_Engineering_RD_H1" style = "font-size : 35px ;margin-bottom : 50px">Activities & Achievements of the Department</h1>
         <ul>
             <li>
                 <img src="../../Images/IRR_1.png" alt="" class="One_Image Img">

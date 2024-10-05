@@ -17,6 +17,15 @@ var Carousel_Section_Ar = `
       <div class="item">
         <img src="../Images/Supporting_Ar.jpg" alt="Image 3" />
       </div>
+      <div class="item">
+        <img src="../Images/Meeting_1_enhanced.jpeg" alt="Image 4" />
+      </div>
+      <div class="item">
+        <img src="../Images/Meeting_2_enhanced.jpeg" alt="Image 5" />
+      </div>
+      <div class="item">
+        <img src="../Images/Meeting_3_enhanced.jpeg" alt="Image 6" />
+      </div>
     </div>
     <button class="btn prev">Prev</button>
     <button class="btn next">Next</button>
@@ -34,6 +43,15 @@ var Carousel_Section_En = `
       </div>
       <div class="item">
         <img src="../Images/Supporting_En.jpg" alt="Image 3" />
+      </div>
+      <div class="item">
+        <img src="../Images/Meeting_1_enhanced.jpeg" alt="Image 4" />
+      </div>
+      <div class="item">
+        <img src="../Images/Meeting_2_enhanced.jpeg" alt="Image 5" />
+      </div>
+      <div class="item">
+        <img src="../Images/Meeting_3_enhanced.jpeg" alt="Image 6" />
       </div>
     </div>
     <button class="btn prev">Prev</button>
