@@ -661,6 +661,10 @@ use {
     #A_OL_LI_AR_5 {
         height: 150px !important;
     }
+
+    #Main_Objectives_Section_H2 {
+        margin-top: 100px;
+    }
 }
 
 @media screen and (max-width : 1000px) {
@@ -1024,5 +1028,10 @@ use {
     .leaderboard_En h1 svg {
         width: 30px;
         height: 30px;
+    }
+
+    #Main_Objectives_Section_H2 {
+        margin-top: 1500px !important;
+        margin-bottom: -1500px !important;
     }
 }

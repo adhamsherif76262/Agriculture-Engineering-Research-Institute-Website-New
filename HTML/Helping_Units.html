@@ -63,6 +63,11 @@
     <script src="../JavaScript/Arabic_Lang_Button.js"></script>
     <script src="../JavaScript/English_Lang_Button.js"></script>
     <script src="../JavaScript/Storage_Data_Encryption.js"></script>
+    <script>
+        if (localStorage.getItem("Permenant_Language") === null || localStorage.getItem("Permenant_Language") === "") {
+            location.href = "../Home.html";
+        }
+    </script>
 </body>
 
 </html>
