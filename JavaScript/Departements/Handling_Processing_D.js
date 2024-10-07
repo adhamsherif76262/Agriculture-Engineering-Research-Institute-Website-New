@@ -358,10 +358,10 @@ function M_E_Section_Load(){
   const slider_single_image = document.getElementsByClassName(
     "slider-single-image"
   );
-  alert("Width" + "         " +slider_single_image[1].offsetWidth);
-  alert("Height" + "         " + slider_single_image[1].offsetHeight);
-  alert("Width" + "         " + window.innerWidth);
-  alert("Height" + "         " + window.innerHeight);
+  // alert("Width" + "         " +slider_single_image[1].offsetWidth);
+  // alert("Height" + "         " + slider_single_image[1].offsetHeight);
+  // alert("Width" + "         " + window.innerWidth);
+  // alert("Height" + "         " + window.innerHeight);
     const repeat = false;
     const noArrows = false;
     const noBullets = false;
