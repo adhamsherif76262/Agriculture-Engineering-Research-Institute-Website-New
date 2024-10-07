@@ -24,10 +24,12 @@ var Carousel_Section_Ar = `
           <div class="carousel-slide slide14"></div>
           <div class="carousel-slide slide15"></div>
           <div class="carousel-slide slide16"></div>
+          <div class="carousel-slide slide17"></div>
       </div>
       <!-- Indicators -->
       <div class="indicators">
           <span class="dot active"></span>
+          <span class="dot"></span>
           <span class="dot"></span>
           <span class="dot"></span>
           <span class="dot"></span>
@@ -62,6 +64,7 @@ var Carousel_Section_Ar = `
           <button type="button" class="slide-button" data-index="13">١٤</button>
           <button type="button" class="slide-button" data-index="14">١٥</button>
           <button type="button" class="slide-button" data-index="15">١٦</button>
+          <button type="button" class="slide-button" data-index="16">١٧</button>
       </div>
   </div>
 `;
@@ -87,10 +90,12 @@ var Carousel_Section_En = `
                 <div class="carousel-slide slide14"></div>
                 <div class="carousel-slide slide15"></div>
                 <div class="carousel-slide slide16"></div>
+                <div class="carousel-slide slide17"></div>
             </div>
             <!-- Indicators -->
             <div class="indicators">
                 <span class="dot active"></span>
+                <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
@@ -125,6 +130,7 @@ var Carousel_Section_En = `
                 <button type="button" class="slide-button" data-index="13">14</button>
                 <button type="button" class="slide-button" data-index="14">15</button>
                 <button type="button" class="slide-button" data-index="15">16</button>
+                <button type="button" class="slide-button" data-index="16">17</button>
             </div>
         </div>
 `;
@@ -155,6 +161,7 @@ function Research_Projects_Load_Content_Ar() {
       "طريقة مبتكرة للزراعة الدقيقة الكهروميكانيكية لبنجر السكر و الذرة",
       "التخزين الآمن لبعض بذور النباتات الطبية والعطرية",
       "التدابير الصحية النباتية المتكاملة والقيمة المضافة: نحو الحفاظ علي جودة ما بعد الحصاد واطالة عمر تخزين الطماطم",
+      "آلة تسطير القمح علي مصاطب",
     ];
 
   let currentSlide = 0;
@@ -216,6 +223,7 @@ function Research_Projects_Load_Content_En() {
     "An innovative method for electromechanical precision cultivation of sugar beets and corn",
     "Safe Storage of Some Medical and Aromatic Seeds Using Ultraviolet and Different Types of Hermetic Bags",
     "Integrated phytosanitary measures and value addition: towards maintaining postharvest quality and extending the storage life of tomato",
+    "Raised bed seed drill",
   ];
 
   let currentSlide = 0;

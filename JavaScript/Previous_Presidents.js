@@ -13,7 +13,7 @@ var PP_TimeLine_Section_Ar = `
       <div class="container left">
           <div class="Content_Ar">
               <h2>من فبراير ١٩٨٣ إلى يوليو ١٩٩٤</h2>
-              <h2>الأستاذ الدكتور أحمد فريد الصهريجي</h2>
+              <h2>الأستاذ الدكتور أحمد فريد السهريجي</h2>
               <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_1_Final-removebg-preview_enhanced.png" target="_blank"
                   style="--img: url('../Images/Previous Presidents/PP_1_Final-removebg-preview_enhanced.png');"></a>
           </div>
@@ -37,7 +37,7 @@ var PP_TimeLine_Section_Ar = `
       <div class="container right">
           <div class="Content_Ar">
               <h2>من مايو ٢٠٠٥ إلى مايو ٢٠١٠</h2>
-              <h2>أ.د. جمال حسن السعيد</h2>
+              <h2>أ.د. جمال حسن السيد</h2>
               <a rel="noopener" class="frame" href="../Images/Previous Presidents/PP_4_Final-removebg-preview_enhanced.png" target="_blank"
                   style="--img: url('../Images/Previous Presidents/PP_4_Final-removebg-preview_enhanced.png');"></a>
           </div>

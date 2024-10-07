@@ -495,18 +495,18 @@ function Patents_Load_Content_Ar() {
       window.performance.getEntriesByType("navigation")[0].type === "prerender"
     ) {
       if (browserName.toLowerCase() === "chrome") {
-        alert(browserName);
+        // alert(browserName);
         Wrapper_Ar.style.width = "66.8%";
-        alert(Wrapper_Ar.style.width);
+        // alert(Wrapper_Ar.style.width);
       } else if (browserName.toLowerCase() === "firefox") {
-        alert(browserName);
+        // alert(browserName);
         Wrapper_Ar.style.width = "66%";
-        alert(Wrapper_Ar.style.width);
+        // alert(Wrapper_Ar.style.width);
       } else if (browserName.toLowerCase() === "microsoft edge") {
-        alert(browserName);
-        // Wrapper_En.style.width = "62.9%";
-        Wrapper_Ar.style.width = "68.9%";
-        alert(Wrapper_Ar.style.width);
+        // alert(browserName);
+        Wrapper_Ar.style.width = "67.1%";
+        // Wrapper_Ar.style.width = "68.9%";
+        // alert(Wrapper_Ar.style.width);
       }
     }
   const myfun_Ar = (num) => {
@@ -624,16 +624,16 @@ function Patents_Load_Content_En() {
       
       if (
         browserName.toLowerCase() === "chrome") {
-          alert(browserName)
+          // alert(browserName)
         Wrapper_En.style.width = "66.8%";
       } else if (browserName.toLowerCase() === "firefox") {
-        alert(browserName)
+        // alert(browserName)
         Wrapper_En.style.width = "66%";
       } else if (browserName.toLowerCase() === "microsoft edge") {
-        alert(browserName)
+        // alert(browserName)
         // Wrapper_En.style.width = "62.9%";
         Wrapper_En.style.width = "67%";
-        alert(Wrapper_En.style.width);
+        // alert(Wrapper_En.style.width);
       }
     }
   
