@@ -139,11 +139,11 @@
     
 setTimeout(()=>{
         var Overview_H2 = document.getElementById("Overview_H2");
-        if(Overview_H2.innerHTML = ""){
+        if(Overview_H2.innerHTML === "" || Overview_H2.innerText === ""){
         alert("empty")
         location.reload();
         }
-},[500])
+},[2000])
 </script>
 
 
