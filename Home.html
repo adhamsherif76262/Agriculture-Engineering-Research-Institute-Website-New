@@ -85,24 +85,78 @@
 <script  src="./JavaScript/English_Lang_Button.js"></script>
 <script src="./JavaScript/Storage_Data_Encryption.js"></script>
 <!-- <script src="./JavaScript/Get Location.js"></script> -->
+
+<script>
+    // location.reload();
+    // localStorage.clear()
+    // alert(localStorage.getItem("Permenant_Language"))
+    console.log(`The Password Is :: \t\n\n ${password}`)
+    // console.log(Bubbles)
+    // localStorage.clear()
+    // localStorage.setItem("Permenant_Language", "HALAAAA");
+    if (!(location.href.includes("/Home") || location.href.includes("/home"))){
+        // console.log("The Page URL Before Modifications  " + location.href)
+        location.href += "/Home";
+        // console.log("The Page URL After Modifications  " + location.href)
+    }
+    else{
+        // console.log("The URL Is On Home Page")
+    }
+    console.log("Lang From Home :: " + localStorage.getItem("Permenant_Language"));
+    if(
+    (localStorage.getItem("Permenant_Language") != "English" && localStorage.getItem("Permenant_Language") != "عربي"))
+    {
+        const xhr = new XMLHttpRequest();
+        xhr.open(
+          "GET",
+          "https://api.geoapify.com/v1/ipinfo?&apiKey=b1eafd427c864fd8ad4009a48be4ec1f"
+        );
+        xhr.onload = function () {
+        //   localStorage.setItem("Permenant_Language", " ");
+          JSON.parse(xhr.responseText);
+          console.log(JSON.parse(xhr.responseText));
+          if (
+            JSON.parse(xhr.responseText).country.languages[0].name_native ===
+            "العربية"
+          ) {
+            localStorage.setItem("Permenant_Language", "عربي");
+            console.log("Lang From Home After Conversion :: " + localStorage.getItem("Permenant_Language"));
+            // sessionStorage.setItem("Permenant_Language", "عربي");
+            // sessionStorage.getItem()
+            // Permenant_Language = "عربي";
+            NavIsAR();
+          } else {
+            localStorage.setItem("Permenant_Language", "English");
+            console.log("Lang From Home After Conversion :: " + localStorage.getItem("Permenant_Language"));
+            // sessionStorage.setItem("Permenant_Language", "English");
+            // Permenant_Language = "English";
+            NavIsEn();
+          }
+        };
+    
+        xhr.send();
+    }
+</script>
+
+
  <script>
      var Hel = "ZZZZZZZZZZZZZZZZZZZZZZZ";
 
-     setTimeout(()=>{
-     var titleHome = document.getElementById("Title_Home");
-     var homeH1 = document.getElementById("Home_H1");
-     var Overview_H2 = document.getElementById("Overview_H2");
-     var Overview_Section = document.getElementById("Overview_Section");
-     var Current_President_H2 = document.getElementById("Current_President_H2");
-     var Video_Section = document.getElementById("Video_Section");
-     var Objectives_Section = document.getElementById("Objectives_Section");
-     var Current_President_Section = document.getElementById(
-     "Current_President_Section"
-     );
-     var First_P = document.getElementById("First_P");
-     var Second_P = document.getElementById("Second_P");
+     setTimeout(() => {
+         var titleHome = document.getElementById("Title_Home");
+         var homeH1 = document.getElementById("Home_H1");
+         var Overview_H2 = document.getElementById("Overview_H2");
+         var Overview_Section = document.getElementById("Overview_Section");
+         var Current_President_H2 = document.getElementById("Current_President_H2");
+         var Video_Section = document.getElementById("Video_Section");
+         var Objectives_Section = document.getElementById("Objectives_Section");
+         var Current_President_Section = document.getElementById(
+             "Current_President_Section"
+         );
+         var First_P = document.getElementById("First_P");
+         var Second_P = document.getElementById("Second_P");
 
-     var Objectives_Section_Ar = `
+         var Objectives_Section_Ar = `
      <div class="wrapper">
          <h1>الأهداف الرئيسة للمعهد</h1>
          <ul>
@@ -126,7 +180,7 @@
          </ul>
      </div>
      `;
-     var Objectives_Section_En = `
+         var Objectives_Section_En = `
      <div class="wrapper">
          <h1>Institute Main Objectives</h1>
          <ul>
@@ -150,7 +204,7 @@
      </div>
      `;
 
-     var Current_President_Section_Ar = `
+         var Current_President_Section_Ar = `
      <section id="Current_President_Section_Ar">
          <ul class="tilesWrap">
              <li>
@@ -205,7 +259,7 @@
          </ul>
      </section>
      `;
-     var Current_President_Section_En = `
+         var Current_President_Section_En = `
      <section id="Current_President_Section_En">
          <ul class="tilesWrap">
              <li>
@@ -265,119 +319,69 @@
      </section>
      `;
 
-     function Home_Load_Content_Ar() {
-     Overview_H2.innerHTML = `نبذة تاريخية عن نشأة المعهد :`;
-     Overview_H2.style.direction = "rtl";
-     Overview_Section.innerHTML = `في عام 1977 وبناء على القرار الوزاري رقم 323 أنشىء معهد الميكنة الزراعية وتولى مهمة
+         function Home_Load_Content_Ar() {
+             Overview_H2.innerHTML = `نبذة تاريخية عن نشأة المعهد :`;
+             Overview_H2.style.direction = "rtl";
+             Overview_Section.innerHTML = `في عام 1977 وبناء على القرار الوزاري رقم 323 أنشىء معهد الميكنة الزراعية وتولى مهمة
      نشر الميكنة الزراعية في مصر، ثم تغير الاسم ليصبح معهد بحوث الزراعة الآلية لمواكبة التطور المحلى والعالمى للبحوث
      والتطبقات فى مجال الزراعة الآلية وذلك في عام 1982. ثم بعد ذلك بحوالي عشر سنوات اي في عام 1992ونظرا للتغير
      التكنولوجي السريع ازدادت أنشطة وبحوث والتزامات المعهد لتشمل جميع فروع الهندسة الزراعية من ميكنة ورى وطاقة فتم تغيير
      اسمه ليصبح معهد بحوث الهندسة الزراعية .`;
-     Overview_Section.style.direction = "rtl";
-     homeH1.textContent = "كلمة مدير المعهد";
-     homeH1.style.direction = "rtl";
-     Current_President_H2.textContent =
-     "مدير المعهد الأستاذ الدكتور : حازم مهاود";
-     Current_President_H2.style.direction = "rtl";
-     First_P.innerHTML =
-     "تلعب الهندسة الزراعية دورًا حيويًا في تحسين وتطوير الإنتاج الزراعي من خلال تطبيق مبادئ الهندسة والتكنولوجيا في مختلف المجالات الزراعية. <br> وتتمثل مساهمات الهندسة الزراعية في ما يلي :";
-     First_P.style.direction = "rtl";
-     Second_P.textContent =
-     "باختصار، الهندسة الزراعية تسهم بفاعلية في تعزيز الزراعة المستدامة وزيادة كفاءة وإنتاجية العمليات الزراعية من خلال الابتكار والتكنولوجيا المتقدمة.";
-     Second_P.style.direction = "rtl";
-     HomePageTitle[0].innerHTML = "الرئيسية";
-     Objectives_Section.innerHTML = Objectives_Section_Ar;
-     Objectives_Section.style.direction = "rtl";
-     Current_President_Section.innerHTML = Current_President_Section_Ar;
-     }
-     function Home_Load_Content_En() {
-     Overview_H2.innerHTML = `Historical Overview of the Institute :`;
-     Overview_H2.style.direction = "ltr";
-     Overview_Section.innerHTML = `In 1977, based on Ministerial Decree No. 323, the Agricultural Mechanization
+             Overview_Section.style.direction = "rtl";
+             homeH1.textContent = "كلمة مدير المعهد";
+             homeH1.style.direction = "rtl";
+             Current_President_H2.textContent =
+                 "مدير المعهد الأستاذ الدكتور : حازم مهاود";
+             Current_President_H2.style.direction = "rtl";
+             First_P.innerHTML =
+                 "تلعب الهندسة الزراعية دورًا حيويًا في تحسين وتطوير الإنتاج الزراعي من خلال تطبيق مبادئ الهندسة والتكنولوجيا في مختلف المجالات الزراعية. <br> وتتمثل مساهمات الهندسة الزراعية في ما يلي :";
+             First_P.style.direction = "rtl";
+             Second_P.textContent =
+                 "باختصار، الهندسة الزراعية تسهم بفاعلية في تعزيز الزراعة المستدامة وزيادة كفاءة وإنتاجية العمليات الزراعية من خلال الابتكار والتكنولوجيا المتقدمة.";
+             Second_P.style.direction = "rtl";
+             HomePageTitle[0].innerHTML = "الرئيسية";
+             Objectives_Section.innerHTML = Objectives_Section_Ar;
+             Objectives_Section.style.direction = "rtl";
+             Current_President_Section.innerHTML = Current_President_Section_Ar;
+         }
+
+         function Home_Load_Content_En() {
+             Overview_H2.innerHTML = `Historical Overview of the Institute :`;
+             Overview_H2.style.direction = "ltr";
+             Overview_Section.innerHTML = `In 1977, based on Ministerial Decree No. 323, the Agricultural Mechanization
      Institute was established, tasked with promoting agricultural mechanization in Egypt. The name was later changed to
      the Agricultural Mechanization Research Institute to align with local and global advancements in research and
      applications in the field of agricultural mechanization, which took place in 1982. About ten years later, in 1992,
      due to rapid technological changes, the institute's activities, research, and responsibilities expanded to include
      all branches of agricultural engineering, including mechanization, irrigation, and energy. Consequently, its name
      was changed to the Agricultural Engineering Research Institute.`;
-     Overview_Section.style.direction = "ltr";
-     homeH1.textContent = "Director's speech";
-     homeH1.style.direction = "ltr";
-     Current_President_H2.textContent =
-     "Institute Director : Prof. Dr. Hazem Mehawed";
-     Current_President_H2.style.direction = "ltr";
-     First_P.innerHTML = `Agricultural engineering plays a crucial role in enhancing and advancing agricultural
+             Overview_Section.style.direction = "ltr";
+             homeH1.textContent = "Director's speech";
+             homeH1.style.direction = "ltr";
+             Current_President_H2.textContent =
+                 "Institute Director : Prof. Dr. Hazem Mehawed";
+             Current_President_H2.style.direction = "ltr";
+             First_P.innerHTML = `Agricultural engineering plays a crucial role in enhancing and advancing agricultural
      production by applying engineering and technology principles across various agricultural sectors. <br> The
      contributions of agricultural engineering include the following :`;
-     First_P.style.direction = "ltr";
-     Second_P.textContent =
-     "In summary, agricultural engineering actively contributes to promoting sustainable agriculture and increasing the efficiency and productivity of agricultural operations through innovation and advanced technology.";
-     Second_P.style.direction = "ltr";
-     HomePageTitle[0].innerHTML = "AERI Home Page";
-     Objectives_Section.innerHTML = Objectives_Section_En;
-     Objectives_Section.style.direction = "ltr";
-     Current_President_Section.innerHTML = Current_President_Section_En;
-     }
+             First_P.style.direction = "ltr";
+             Second_P.textContent =
+                 "In summary, agricultural engineering actively contributes to promoting sustainable agriculture and increasing the efficiency and productivity of agricultural operations through innovation and advanced technology.";
+             Second_P.style.direction = "ltr";
+             HomePageTitle[0].innerHTML = "AERI Home Page";
+             Objectives_Section.innerHTML = Objectives_Section_En;
+             Objectives_Section.style.direction = "ltr";
+             Current_President_Section.innerHTML = Current_President_Section_En;
+         }
 
-     if (localStorage.getItem("Permenant_Language") === "English") {
-     Home_Load_Content_En();
-     }
-     if (localStorage.getItem("Permenant_Language") === "عربي") {
-     Home_Load_Content_Ar();
-     }
+         if (localStorage.getItem("Permenant_Language") === "English") {
+             Home_Load_Content_En();
+         }
+         if (localStorage.getItem("Permenant_Language") === "عربي") {
+             Home_Load_Content_Ar();
+         }
 
-     },[500])
-</script>
-<script>
-    // location.reload();
-    // localStorage.clear()
-    // alert(localStorage.getItem("Permenant_Language"))
-    console.log(`The Password Is :: \t\n\n ${password}`)
-    // console.log(Bubbles)
-    // localStorage.clear()
-    // localStorage.setItem("Permenant_Language", "HALAAAA");
-    if (!(location.href.includes("/Home") || location.href.includes("/home"))){
-        // console.log("The Page URL Before Modifications  " + location.href)
-        location.href += "/Home";
-        // console.log("The Page URL After Modifications  " + location.href)
-    }
-    else{
-        // console.log("The URL Is On Home Page")
-    }
-    console.log("Lang From Home :: " + localStorage.getItem("Permenant_Language"));
-    if(
-    (localStorage.getItem("Permenant_Language") != "English" && localStorage.getItem("Permenant_Language") != "عربي"))
-    {
-        const xhr = new XMLHttpRequest();
-        xhr.open(
-          "GET",
-          "https://api.geoapify.com/v1/ipinfo?&apiKey=b1eafd427c864fd8ad4009a48be4ec1f"
-        );
-        xhr.onload = function () {
-        //   localStorage.setItem("Permenant_Language", " ");
-          JSON.parse(xhr.responseText);
-          console.log(JSON.parse(xhr.responseText));
-          if (
-            JSON.parse(xhr.responseText).country.languages[0].name_native ===
-            "العربية"
-          ) {
-            localStorage.setItem("Permenant_Language", "عربي");
-            console.log("Lang From Home After Conversion :: " + localStorage.getItem("Permenant_Language"));
-            // sessionStorage.setItem("Permenant_Language", "عربي");
-            // sessionStorage.getItem()
-            // Permenant_Language = "عربي";
-            NavIsAR();
-          } else {
-            localStorage.setItem("Permenant_Language", "English");
-            console.log("Lang From Home After Conversion :: " + localStorage.getItem("Permenant_Language"));
-            // sessionStorage.setItem("Permenant_Language", "English");
-            // Permenant_Language = "English";
-            NavIsEn();
-          }
-        };
-    
-        xhr.send();
-    }
-</script>
+     }, [500])
+ </script>
 </body>
 </html>
