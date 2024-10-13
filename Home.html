@@ -94,7 +94,7 @@
     // console.log(Bubbles)
     // localStorage.clear()
     // localStorage.setItem("Permenant_Language", "HALAAAA");
-    if (!location.href.includes("/Home") || !location.href.includes("/home")){
+    if (!(location.href.includes("/Home") || location.href.includes("/home"))){
         // console.log("The Page URL Before Modifications  " + location.href)
         location.href += "/Home";
         // console.log("The Page URL After Modifications  " + location.href)
@@ -135,6 +135,10 @@
         };
     
         xhr.send();
+    }
+    var First_P = document.getElementById("First_P");
+    if(First_P.innerHTML = ""){
+        location.reload();
     }
 </script>
 
